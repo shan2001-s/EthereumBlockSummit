@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket Purchase</title>
+ <style>
+  .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket h2 {
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.ticket p {
+  color: #666;
+  font-family: Arial, sans-serif;
+}
+
+.ticket button {
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: not-allowed;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.ticket.active button {
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.countdown {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+ </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ticket early active">
+      <h2>Early Bird Ticket</h2>
+      <p>Get your ticket at a discounted price!</p>
+      <p>End Date: June 22, 2023</p>
+      <!-- <div class="countdown">
+        <span id="days">0</span> days
+        <span id="hours">0</span> hours
+        <span id="minutes">0</span> minutes
+        <span id="seconds">0</span> seconds
+      </div> -->
+      <button id="buyNowBtn" class="active">Buy Now</button>
+    </div>
+
+    <div class="ticket regular">
+      <h2>Regular Ticket</h2>
+      <p>Standard ticket price.</p>
+      <p>End Date: July 22, 2023</p>
+      <button disabled>Buy Now</button>
+    </div>
+
+    <div class="ticket late">
+      <h2>Late Entry Ticket</h2>
+      <p>Last-minute ticket price.</p>
+      <p>End Date: November 22, 2023</p>
+      
+      <button disabled>Buy Now</button>
+    </div>
+  </div>
+
+  <script >
+    // Calculate the time difference between the current date and the target end dates
+function getTimeDifference(endDate) {
+  const totalSeconds = (new Date(endDate) - new Date()) / 1000;
+  const days = Math.floor(totalSeconds / 3600 / 24);
+  const hours = Math.floor(totalSeconds / 3600) % 24;
+  const minutes = Math.floor(totalSeconds / 60) % 60;
+  const seconds = Math.floor(totalSeconds) % 60;
+  return { days, hours, minutes, seconds };
+}
+
+// Update the countdown timer display
+function updateCountdown() {
+  const earlyBirdEndDate = new Date("May 23, 2023 14:40:00").getTime();
+  const regularEndDate = new Date("May 23, 2023 14:47:00").getTime();
+  const lateEndDate = new Date("May 23, 2023 14:48:00").getTime();
+
+  const timeDiffEarly = getTimeDifference(earlyBirdEndDate);
+  const timeDiffRegular = getTimeDifference(regularEndDate);
+  const timeDiffLate = getTimeDifference(lateEndDate);
+
+  if (timeDiffEarly.days < 0) {
+    // Early Bird ticket end date has passed
+    disableTicket("early");
+    enableTicket("regular");
+  }
+
+  if (timeDiffRegular.days < 0) {
+    // Regular ticket end date has passed
+    disableTicket("regular");
+    enableTicket("late");
+  }
+
+  if (timeDiffLate.days < 0) {
+    // Late Entry ticket end date has passed
+    disableTicket("late");
+  }
+
+  document.getElementById("days").textContent = timeDiffEarly.days;
+  document.getElementById("hours").textContent = timeDiffEarly.hours;
+  document.getElementById("minutes").textContent = timeDiffEarly.minutes;
+  document.getElementById("seconds").textContent = timeDiffEarly.seconds;
+}
+
+// Disable a ticket card and its Buy Now button
+function disableTicket(ticketType) {
+  const ticketCard = document.querySelector(`.ticket.${ticketType}`);
+  const buyNowBtn = ticketCard.querySelector("button");
+
+  ticketCard.classList.remove("active");
+  buyNowBtn.removeEventListener("click", handleBuyNow);
+  buyNowBtn.disabled = true;
+}
+
+// Enable a ticket card and its Buy Now button
+function enableTicket(ticketType) {
+  const ticketCard = document.querySelector(`.ticket.${ticketType}`);
+  const buyNowBtn = ticketCard.querySelector("button");
+
+  ticketCard.classList.add("active");
+  buyNowBtn.addEventListener("click", handleBuyNow);
+  buyNowBtn.disabled = false;
+}
+
+// Activate the early bird ticket card and start the countdown timer
+function activateEarlyBirdTicket() {
+  enableTicket("early");
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
+
+// Handle the Buy Now button click
+function handleBuyNow() {
+  alert("You've purchased a ticket!");
+  // Additional logic for the purchase can be added here
+}
+
+// On page load, activate the Early Bird ticket
+window.onload = function () {
+  activateEarlyBirdTicket();
+};
+
+  </script>
+</body>
+</html>

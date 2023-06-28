@@ -1,0 +1,19 @@
+{
+  "name": "theevent",
+  "version": "1.0.0",
+  "description": "Thanks for downloading this template!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shan2001-s/TheEvent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shan2001-s/TheEvent/issues"
+  },
+  "homepage": "https://github.com/shan2001-s/TheEvent#readme"
+}
