@@ -718,12 +718,12 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg");
+  background-color: white;
   background-size: cover;
   overflow: hidden;
   position: relative;
-  color: #fff;
-  padding: 60px 0 40px 0;
+  color: black;
+  padding: 20px 0 20px 0;
 }
 
 @media (min-width: 1024px) {
@@ -734,7 +734,7 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+ 
   position: absolute;
   bottom: 0;
   top: 0;
