@@ -1,6 +1,6 @@
 /**
 * Template Name: TheEvent
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
+* Updated: Jun 18 2023 with Bootstrap v5.3.0
 * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -60,28 +60,40 @@
   }
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
-// Function to change navbar opacity on scroll
-function changeNavbarOpacity() {
-  const navbar = document.getElementById("navbar");
-  const content = document.querySelector(".content");
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollTop > content.offsetTop) {
-    navbar.style.opacity = "7"; // Change opacity value as desired
-  } else {
-    navbar.style.opacity = "1";
-  }
-}
-
- // Call the function initially and on every scroll event
- window.addEventListener("load", changeNavbarOpacity);
- window.addEventListener("scroll", changeNavbarOpacity);
-
- 
   /**
    * Scrolls to an element with header offset
    */
-  
+  const scrollto = (el) => {
+    let header = select('#header')
+    let offset = header.offsetHeight
+
+    if (!header.classList.contains('header-scrolled')) {
+      offset -= 20
+    }
+
+    let elementPos = select(el).offsetTop
+    window.scrollTo({
+      top: elementPos - offset,
+      behavior: 'smooth'
+    })
+  }
+
+  /**
+   * Toggle .header-scrolled class to #header when page is scrolled
+   */
+  let selectHeader = select('#header')
+  if (selectHeader) {
+    const headerScrolled = () => {
+      if (window.scrollY > 100) {
+        selectHeader.classList.add('header-scrolled')
+      } else {
+        selectHeader.classList.remove('header-scrolled')
+      }
+    }
+    window.addEventListener('load', headerScrolled)
+    onscroll(document, headerScrolled)
+  }
 
   /**
    * Back to top button
@@ -89,9 +101,11 @@ function changeNavbarOpacity() {
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
-      
+      if (window.scrollY > 100) {
         backtotop.classList.add('active')
-      
+      } else {
+        backtotop.classList.add('active')
+      }
     }
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
@@ -215,47 +229,4 @@ function changeNavbarOpacity() {
     })
   });
 
-})()
-
- // Get the target date (November 1st)
- const targetDate = new Date('2023-11-01');
-
- // Function to calculate the time remaining
- function calculateTimeRemaining() {
-   const currentTime = new Date();
-   const timeDifference = targetDate.getTime() - currentTime.getTime();
-   
-   const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-   const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-   const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-   const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-   
-   return {
-     days,
-     hours,
-     minutes,
-     seconds
-   };
- }
-
- // Update the countdown elements with the time remaining
- function updateCountdown() {
-   const countdownElement = document.getElementById('countdown');
-   const timeRemaining = calculateTimeRemaining();
-   
-   document.getElementById('days').textContent = formatTime(timeRemaining.days);
-   document.getElementById('hours').textContent = formatTime(timeRemaining.hours);
-   document.getElementById('minutes').textContent = formatTime(timeRemaining.minutes);
-   document.getElementById('seconds').textContent = formatTime(timeRemaining.seconds);
- }
-
- // Add leading zeros to the time units if they are less than 10
- function formatTime(time) {
-   return time < 10 ? '0' + time : time;
- }
-
- // Call the updateCountdown function initially
- updateCountdown();
-
- // Update the countdown every second
- setInterval(updateCountdown, 1000);
+})();
