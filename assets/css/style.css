@@ -592,6 +592,8 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
   background-size: cover; */
 
   background-color: rgb(231, 231, 231);
+  height: 100vh;
+  
  
 }
 
