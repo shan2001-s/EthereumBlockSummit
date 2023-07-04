@@ -60,7 +60,24 @@
   }
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
+// Function to change navbar opacity on scroll
+function changeNavbarOpacity() {
+  const navbar = document.getElementById("navbar");
+  const content = document.querySelector(".content");
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
+  if (scrollTop > content.offsetTop) {
+    navbar.style.opacity = "7"; // Change opacity value as desired
+  } else {
+    navbar.style.opacity = "1";
+  }
+}
+
+ // Call the function initially and on every scroll event
+ window.addEventListener("load", changeNavbarOpacity);
+ window.addEventListener("scroll", changeNavbarOpacity);
+
+ 
   /**
    * Scrolls to an element with header offset
    */
@@ -242,112 +259,3 @@
 
  // Update the countdown every second
  setInterval(updateCountdown, 1000);
-
-
-//  // *********** Start buy ticket 
-
-
- 
-//     // Calculate the time difference between the current date and the target end dates
-// function getTimeDifference(endDate) {
-//   const totalSeconds = (new Date(endDate) - new Date()) / 1000;
-//   const days = Math.floor(totalSeconds / 3600 / 24);
-//   const hours = Math.floor(totalSeconds / 3600) % 24;
-//   const minutes = Math.floor(totalSeconds / 60) % 60;
-//   const seconds = Math.floor(totalSeconds) % 60;
-//   return { days, hours, minutes, seconds };
-// }
-
-// // Update the countdown timer display for the specified ticket
-// function updateCountdown(ticketType, endDate) {
-//   const timeDiff = getTimeDifference(endDate);
-
-//   if (timeDiff.days < 0) {
-//     // Ticket end date has passed
-//     disableTicket(ticketType);
-//     hideCountdown(ticketType);
-//     activateNextTicket(ticketType);
-//   } else {
-//     document.getElementById(`days-${ticketType}`).textContent = timeDiff.days+' d';
-//     document.getElementById(`hours-${ticketType}`).textContent = timeDiff.hours+' hr';
-//     document.getElementById(`minutes-${ticketType}`).textContent = timeDiff.minutes+' min';
-//     document.getElementById(`seconds-${ticketType}`).textContent = timeDiff.seconds+' sec';
-//   }
-// }
-
-// // Disable a ticket card and its Buy Now button
-// function disableTicket(ticketType) {
-//   const ticketCard = document.querySelector(`.ticket.${ticketType}`);
-//   const buyNowBtn = ticketCard.querySelector("button");
-
-//   ticketCard.classList.remove("active");
-//   buyNowBtn.removeEventListener("click", handleBuyNow);
-//   buyNowBtn.disabled = true;
-// }
-
-// // Hide the countdown for the specified ticket
-// function hideCountdown(ticketType) {
-//   const countdown = document.querySelector(`.ticket.${ticketType} .countdown`);
-//   countdown.style.display = "none";
-// }
-
-// // Enable a ticket card and its Buy Now button
-// function enableTicket(ticketType) {
-//   const ticketCard = document.querySelector(`.ticket.${ticketType}`);
-//   const buyNowBtn = ticketCard.querySelector("button");
-
-//   ticketCard.classList.add("active");
-//   buyNowBtn.addEventListener("click", handleBuyNow);
-//   buyNowBtn.disabled = false;
-// }
-
-// // Activate the next ticket and start the countdown timer
-// function activateNextTicket(currentTicketType) {
-//   const ticketTypes = ["early", "regular", "late"];
-//   const currentTicketIndex = ticketTypes.indexOf(currentTicketType);
-//   const nextTicketType = ticketTypes[currentTicketIndex + 1];
-
-//   if (nextTicketType) {
-//     enableTicket(nextTicketType);
-//     const endDate = getEndDateByTicketType(nextTicketType);
-//     updateCountdown(nextTicketType, endDate);
-//     setInterval(() => updateCountdown(nextTicketType, endDate), 1000);
-//   }
-// }
-
-// // Get the end date for the specified ticket type
-// function getEndDateByTicketType(ticketType) {
-//   const endDates = {
-//     early: "May 22, 2023 16:02:00",
-//     regular: "May 25, 2023 16:03:00",
-//     late: "May 26, 2023 16:04:00"
-//   };
-
-//   return endDates[ticketType];
-// }
-
-// // Handle the Buy Now button click
-// function handleBuyNow() {
-//   alert("You've purchased a ticket!");
-//   // Additional logic for the purchase can be added here
-// }
-
-// // On page load, activate the Early Bird ticket
-// window.onload = function () {
-//   enableTicket("early");
-//   const endDate = getEndDateByTicketType("early");
-//   updateCountdown("early", endDate);
-//   setInterval(() => updateCountdown("early", endDate), 1000);
-// };
-
- 
-// // ******* End buy ticket
-
-
-
-// Start Show Speaker Model
-
-
-
-
-// End Show speaker Model

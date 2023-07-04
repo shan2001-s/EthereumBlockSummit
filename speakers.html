@@ -121,12 +121,13 @@
            </div>
 
            <!-- speakers cards -->
-           <div class="row mt-5">
+          
+            <div id="speakers-container" class="row mt-5">
             <div class="col-sm-6 col-md-3">
               <div class="speaker" data-aos="fade-up" data-aos-delay="100">
                <div class="ShowLogo">
-                <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-                <div class="logo">
+                <img src="assets/img/speakers/1.png" alt="Speaker 1" class="img-fluid">
+                <div class="logo" style="cursor: pointer;">
                   <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#5794ff}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
                 </div>
                </div>
@@ -282,79 +283,58 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <img src="assets/img/logo.png" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro.
-              Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore
-              consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
-          </div>
+        <div class="col-md-4 footer-info">
+          <img src="assets/img/logo.png" alt="TheEvenet">
+        </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
+      
+     
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
+        <div class=" col-md-5 footer-contact">
+        
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-
+          <div class="social-links" >
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="telegram"><i class="bi bi-telegram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
           </div>
 
         </div>
-      </div>
-    </div>
+        <div class="col-md-3 footer-links">
+          <p>
+            Privacy policy <br>
+Terms of conditions
+Cookies
+          </p>
+        </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-      -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </div>
+
+  <!-- <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+     
+      All the links in the footer should remain intact.
+      You can delete the links only if you purchased the pro version.
+      Licensing information: https://bootstrapmade.com/license/
+      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+   
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div> -->
+</footer>
+<!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -370,7 +350,72 @@
   <script src="assets/js/main.js"></script>
 
   <script src="assets/js/showSpeakerDetail.js"></script>
+  <script>
+    // Define your array of speakers
+    var linkIn = ` <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#5794ff}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>`
+    var twitter = `<svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#2372fb}</style><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>`
+    var speakers = [
+   {
+     imgSrc: "assets/img/speakers/1.png",
+     name: "Clément Lesaege",
+     position: "Founder at kleros and proof of humanity",
+     Sociallogo:twitter,
+     link: 'https://twitter.com/clesaege'
+   },
+   {
+     imgSrc: "assets/img/speakers/1.png",
+     name: "Clement",
+     position: "Quas alias incidunt",
+     Sociallogo:linkIn,
+     link:'https://twitter.com/clesaege'
+   },
+   // Add more speaker objects as needed
+ ];
+ 
+ // Function to generate the HTML for each speaker
+ function generateSpeakerHTML(speaker) {
+   var speakerHTML = `
+     <div class="col-sm-6 col-md-3">
+       <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+         <div class="ShowLogo">
+           <img src="${speaker.imgSrc}" alt="${speaker.name}" class="img-fluid">
+           <div class="logo" style="cursor: pointer;">
+           <a href="${speaker.link}">
+              ${speaker.Sociallogo}
+            </a>
+            </div>
+         </div>
+         <div class="details">
+           <h7><a href="${speaker.link} ">${speaker.name}</a></h7>
+           <p >${speaker.position}</p>
+         </div>
+       </div>
+     </div>
+   `;
+   return speakerHTML;
+ }
+ 
+ // Function to generate speakers and insert them into the HTML
+ function generateSpeakers() {
+   var speakersContainer = document.getElementById("speakers-container");
+   var speakersHTML = "";
+ 
+   for (var i = 0; i < speakers.length; i++) {
+     var speakerHTML = generateSpeakerHTML(speakers[i]);
+     speakersHTML += speakerHTML;
+   }
+ 
+   speakersContainer.innerHTML = speakersHTML;
+ }
+ 
+ // Call the function to generate speakers
+ generateSpeakers();
+ 
+   
+   </script>
 
 </body>
+
+
 
 </html>

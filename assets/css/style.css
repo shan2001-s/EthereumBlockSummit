@@ -140,13 +140,16 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 90px;
+  height: 65px;
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background-color: #6f40f1
+
+  
 }
 #header.header-inner {
   background: rgba(6, 12, 34, 0.98);
@@ -295,7 +298,8 @@ h6 {
 * Desktop Navigation 
 */
 .navbar {
-  padding: 0;
+  padding: 0 20px 0 0;
+  
 }
 
 .navbar ul {
@@ -811,11 +815,12 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
 }
 
 #speakers .speaker .details a {
-  color: #fff;
+
+color: #f8b422'
 }
 
 #speakers .speaker .details a:hover {
-  color: #f8b422;
+  color: #5b3e00;
 }
 
 #speakers .speaker:hover .details h3 {
