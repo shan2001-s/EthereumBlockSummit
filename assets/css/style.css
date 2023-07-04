@@ -590,10 +590,8 @@ radial-gradient(at 1% 81%, rgb(163, 133, 239) 0px, transparent 50%),
 radial-gradient(at 96% 56%, hsla(243,62%,62%,1) 0px, transparent 50%),
 radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
   background-size: cover; */
-
-  background-color: rgb(231, 231, 231);
   height: 100vh;
-  
+  background-image: url(assets/img/crystalclear.jpeg);
  
 }
 
