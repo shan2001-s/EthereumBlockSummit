@@ -141,7 +141,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   height: 65px;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
@@ -591,7 +591,7 @@ radial-gradient(at 96% 56%, hsla(243,62%,62%,1) 0px, transparent 50%),
 radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
   background-size: cover; */
   height: 100vh;
-  background-image: url(assets/img/crystalclear.jpeg);
+ 
  
 }
 
