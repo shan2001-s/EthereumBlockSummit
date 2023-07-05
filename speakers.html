@@ -41,43 +41,55 @@
     .ShowLogo {
       position: relative;
       display: inline-block;
-      color: white;
-  background-color: white;
+      overflow: hidden; /* Add this line */
+    }
   
-
+    .ShowLogo::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 255, 0.5);
+    
+      transition: background-color 0.3s ease; /* Update this line */
     }
-    .ShowLogo:hover{
-      background-color: #e67e33;
+  
+    .ShowLogo:hover::after {
+     background-color: rgba(0, 0, 255, 0.5);
+     z-index: -1;
+     /* Update this line */
     }
-
-
-
-    .ShowIcon{
-      color: white;
+  
+    .ShowIcon {
       background-color: white;
-      cursor: pointer; position: absolute; margin-top: -200px; margin-left: 120px;
+      cursor: pointer;
+      position: absolute;
+      margin-top: -200px;
+      margin-left: 120px;
       display: none;
       padding: 10px;
-  border-radius: 50%;
+      border-radius: 50%;
     }
-
+  
     .speakerh:hover+.ShowIcon {
       display: block;
     }
-    .ShowIcon:hover{
+  
+    .ShowIcon:hover {
       display: block;
     }
-    .speaker{
-      border-style: solid;
-      border-color: #e67e33;
-    }
-    .speakerh{
-     
-    }
-
   
-
+    .speaker {
+    }
+  
+    .speakerh {
+  
+    }
   </style>
+  
+  
 
 
 <!-- ======= Header ======= -->
@@ -394,7 +406,7 @@ Cookies
      link:''
    },
    {
-     imgSrc: "assets/img/speakers/7.png",
+     imgSrc: "assets/img/speakers/13.png",
      name: "Thomas",
      position: "Crypto & Taxes Portugal",
      Sociallogo:twitter,

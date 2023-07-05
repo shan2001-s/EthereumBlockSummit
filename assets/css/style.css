@@ -133,7 +133,7 @@ h6 {
 }
 
 .section-with-bg {
-  background-color: #f6f7fd;
+  background-color: #8564e0;;
 }
 
 /*--------------------------------------------------------------
@@ -1631,14 +1631,14 @@ color: #f8b422'
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #101522;
+  background: white;
   padding: 0 0 25px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #040919;
+  background:white;
   padding: 60px 0 30px 0;
 }
 
