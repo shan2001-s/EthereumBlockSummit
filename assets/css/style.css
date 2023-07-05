@@ -147,7 +147,7 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background-color:white
+  background-color:whitesmoke
 
   
 }
@@ -783,7 +783,8 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
 }
 
 #speakers .speaker .details {
-  background: rgba(6, 12, 34, 0.76);
+  /* background: rgba(6, 12, 34, 0.76); */
+  background:white;
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -883,9 +884,8 @@ color: #f8b422'
 # Speakers.Html
 --------------------------------------------------------------*/
 #speakers {
- background-color: #222636;
+ background-color:white;
   background-size: cover;
-  overflow: hidden;
   position: relative;
   color: #fff;
   padding: 60px 0 40px 0;
@@ -900,7 +900,7 @@ color: #f8b422'
 
 #speakers:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background:white;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -913,7 +913,7 @@ color: #f8b422'
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #fff;
+  color: #eda406cb;
 }
 
 #speakers h3 {
@@ -927,7 +927,7 @@ color: #f8b422'
 #speakers p {
   font-size: 14px;
   margin-bottom: 20px;
-  color: #fff;
+  color:#0e1b4d
 }
 
 /*--------------------------------------------------------------
