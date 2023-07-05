@@ -41,55 +41,43 @@
     .ShowLogo {
       position: relative;
       display: inline-block;
-      overflow: hidden; /* Add this line */
-    }
+      color: white;
+      
   
-    .ShowLogo::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 255, 0.5);
-    
-      transition: background-color 0.3s ease; /* Update this line */
+
     }
-  
-    .ShowLogo:hover::after {
-     background-color: rgba(0, 0, 255, 0.5);
-     z-index: -1;
-     /* Update this line */
+    .ShowLogo:hover{
+      background-color:  #4724a8;
     }
-  
-    .ShowIcon {
+
+
+
+    .ShowIcon{
+      color: white;
       background-color: white;
-      cursor: pointer;
-      position: absolute;
-      margin-top: -200px;
-      margin-left: 120px;
+      cursor: pointer; position: absolute; margin-top: -200px; margin-left: 120px;
       display: none;
       padding: 10px;
-      border-radius: 50%;
+  border-radius: 50%;
     }
-  
+
     .speakerh:hover+.ShowIcon {
       display: block;
     }
-  
-    .ShowIcon:hover {
+    .ShowIcon:hover{
       display: block;
     }
-  
-    .speaker {
+    .speaker{
+      border-style: solid;
+      border-color:  #4724a8;
     }
-  
-    .speakerh {
-  
+    .speakerh{
+     
     }
+
+  
+
   </style>
-  
-  
 
 
 <!-- ======= Header ======= -->
@@ -145,7 +133,7 @@
 
               <div class="col-md-12" style="text-align: left; z-index: auto; ">
                 <div class="details-aboutUs" style="text-align: left; ">
-                  <h2 style="color: #f8b422">Meet our 2023 speakers. We're adding more every week!</h2>
+                  <h2 style="color: #4724a8">Meet our 2023 speakers. We're adding more every week!</h2>
                   <div style="color: white;">
                     <h6 style="color: black; line-height: 1.6;">
                      Tired of attending conferences and summits filled with superficial panels and keynote speeches? <br> Welcome to our unique anti-conference event, where we prioritize in-depth, face-to-face discussions over surface-level presentations
@@ -161,7 +149,7 @@
 
            <!-- speakers cards -->
           
-            <div id="speakers-container" class="row mt-5">
+            <div id="speakers-container" class="row mt-5 d-flex justify-content-center">
             <!-- <div class="col-sm-6 col-md-2" >
               <div class="speakerh">
                 <div class="speaker" style="border-radius: 50%;" data-aos="fade-up" data-aos-delay="100">
@@ -420,7 +408,7 @@ Cookies
   function generateSpeakerHTML(speaker) {
    var speakerHTML = `
    
-   <div class="col-sm-6 col-md-2" >
+   <div class="col-sm-6 col-md-2 ms-3" >
               <div class="speakerh mt-5">
                 <div class="speaker" style="border-radius: 50%;" data-aos="fade-up" data-aos-delay="100">
                   <div class="ShowLogo" >
