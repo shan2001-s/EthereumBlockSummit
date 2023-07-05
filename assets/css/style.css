@@ -147,7 +147,7 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background-color: #6f40f1
+  background-color:white
 
   
 }
@@ -171,7 +171,7 @@ h6 {
 
 #header #logo h1 a,
 #header #logo h1 a:hover {
-  color: #fff;
+  color: #6f40f1;
 }
 
 #header #logo img {
@@ -324,7 +324,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(202, 206, 221, 0.8);
+  color:#754aec;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -364,7 +364,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color:#4400ff;
 }
 
 .navbar .dropdown ul {
