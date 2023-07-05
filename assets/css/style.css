@@ -889,6 +889,7 @@ color: #f8b422'
   position: relative;
   color: #fff;
   padding: 60px 0 40px 0;
+  
 }
 
 @media (min-width: 1024px) {
@@ -905,6 +906,7 @@ color: #f8b422'
   top: 0;
   left: 0;
   right: 0;
+  
 }
 
 #speakers h2 {
