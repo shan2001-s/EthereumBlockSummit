@@ -104,43 +104,43 @@
                   </div>
                 </div>
                 <div class="  mt-5 ">
-                    <form class="row">
+                    <form class="row" id="form">
                         <div class="mb-3 col-md-6">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1">
+                            <input type="text" name="f_name" class="form-control" id="exampleInputPassword1" required>
                         </div>
                         <div class="mb-3 col-md-6">
                           <label for="exampleInputEmail1" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="email" name="f_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3 col-md-6">
                             <label for="name" class="form-label">Protocol / Project</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1">
+                            <input type="text" name="f_project" class="form-control" id="exampleInputPassword1" required>
                         </div>
                        
                         <div class="mb-3 col-md-6">
                             <label for="name" class="form-label">What is your Budget?</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" name="f_budget" aria-label="Default select example">
                                
                                 <option value="1" selected></option>
-                                <option value="2">5K </option>
-                                <option value="3">10K - 15K </option>
-                                <option value="4">15K - 20K </option>
-                                <option value="5">20K + </option>
+                                <option value="5K">5K </option>
+                                <option value="10K-15K">10K - 15K </option>
+                                <option value="15K-20K">15K - 20K </option>
+                                <option value="20K+">20K + </option>
                               </select>
                          </div>
                          <div class="mb-3 col-md-6">
                           <label for="name" class="form-label">Website</label>
-                          <input type="text" class="form-control" id="exampleInputPassword1">
+                          <input type="text" name="f_website" class="form-control" id="exampleInputPassword1" required>
                       </div>
                       <div class="mb-3 col-md-6">
                         <label for="name" class="form-label">Twitter / LinkedIn</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1">
+                        <input type="text" name="f_link" class="form-control" id="exampleInputPassword1" required>
                     </div>
                          <div class="mb-3 col-md-12">
                           <label for="name" class="form-label">Message</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                          <textarea  name="f_message" class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
                       </div>
                          <!-- <div class="mb-3 ">
                           <label for="name" class="form-label">Message</label>
@@ -149,8 +149,8 @@
                        
                         <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                         <div class="d-flex justify-content-center mt-4">
-                            <a class="seemore-speaker scrollto" >Submit </a>
-                          </div>
+                          <button type="submit" id="button" class="seemore-speaker scrollto" >Submit</button>
+                        </div>
                       </form>
                 </div>
               </div>
@@ -239,6 +239,36 @@ Cookies <br>hello@theblocklisboa.com
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('mejZzqAaJZ2uYyMR9')
+</script>
+
+<script>
+  const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_o3v1pai';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
 </body>
 
 </html>
