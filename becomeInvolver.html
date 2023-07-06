@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TheEvent Bootstrap Template - Involver Details</title>
+  <title>EBS</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -113,26 +113,26 @@ EBS will take place on November 6-8th in Lisbon.
                   </div>
                 </div>
                 <div class="  mt-5 ">
-                    <form class="row" style="">
+                    <form class="row" id="form" style="">
                         <div class="mb-3 col-md-6">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1">
+                            <input type="text" name="f_name"  class="form-control" id="exampleInputPassword1" required>
                         </div>
                         <div class="mb-3 col-md-6">
                           <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="email" class="form-control" name="f_email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                           <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                         </div>
           
                         <div class="mb-3 col-md-6">
                           <label for="name" class="form-label">Twitter</label>
-                          <input type="text" class="form-control" id="exampleInputPassword1">
+                          <input type="text" name="f_link" class="form-control" id="exampleInputPassword1" required>
                       </div>
                       
                        
                         <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                         <div class="d-flex justify-content-center mt-4">
-                            <a class="seemore-speaker scrollto" >Submit </a>
+                          <button type="submit" id="button" class="seemore-speaker scrollto" >Submit</button>
                           </div>
                       </form>
                 </div>
@@ -194,20 +194,6 @@ hello@theblocklisboa.com
     </div>
   </div>
 
-  <!-- <div class="container">
-    <div class="copyright">
-      &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-     
-      All the links in the footer should remain intact.
-      You can delete the links only if you purchased the pro version.
-      Licensing information: https://bootstrapmade.com/license/
-      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-   
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-  </div> -->
 </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -222,6 +208,36 @@ hello@theblocklisboa.com
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('3Qnxkv6xfFEL3lQjl')
+</script>
+  <script>
+    const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_h8yuakm';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+  </script>
 
 </body>
 

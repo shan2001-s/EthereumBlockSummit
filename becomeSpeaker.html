@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ESM</title>
+  <title>EBS</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -102,35 +102,60 @@
                   </div>
                 </div>
                 <div class="  mt-5 ">
-                    <form class="row" style="">
+                    <form class="row" style="" id="form">
                         <div class="mb-3 col-md-6">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1">
+                            <label for="name" class="form-label"> Name</label>
+                            <input type="text" class="form-control" name="f_name" id="exampleInputPassword1" required>
                         </div>
                         <div class="mb-3 col-md-6">
                           <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="email" class="form-control" name="f_email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                           <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                         </div>
                         <div class="mb-3 col-md-6">
                             <label for="name" class="form-label">Protocol / Project</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1">
+                            <input type="text" class="form-control"  name="f_project" id="exampleInputPassword1" required>
                         </div>
           
                         <div class="mb-3 col-md-6">
                           <label for="name" class="form-label">Twitter / LinkIn link</label>
-                          <input type="text" class="form-control" id="exampleInputPassword1">
+                          <input type="text" class="form-control" name="f_link" id="exampleInputPassword1" required>
                       </div>
                       <div class="mb-3 col-md-12">
                         <label for="name" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <textarea class="form-control" name="f_message" id="exampleFormControlTextarea1" rows="5" required></textarea>
                     </div>
                        
                         <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                         <div class="d-flex justify-content-center mt-4">
-                            <a class="seemore-speaker scrollto" >Submit</a>
+                            <button type="submit" id="button" class="seemore-speaker scrollto" >Submit</button>
                           </div>
                       </form>
+
+                      <!-- <form id="form">
+                        <div class="field">
+                          <label for="f_name">f_name</label>
+                          <input type="text" name="f_name" id="f_name">
+                        </div>
+                        <div class="field">
+                          <label for="f_project">f_project</label>
+                          <input type="text" name="f_project" id="f_project">
+                        </div>
+                        <div class="field">
+                          <label for="f_email">f_email</label>
+                          <input type="text" name="f_email" id="f_email">
+                        </div>
+                        <div class="field">
+                          <label for="f_link">f_link</label>
+                          <input type="text" name="f_link" id="f_link">
+                        </div>
+                        <div class="field">
+                          <label for="f_message">f_message</label>
+                          <input type="text" name="f_message" id="f_message">
+                        </div>
+                      
+                        <input type="submit" id="button" value="Send Email" >
+                      </form> -->
                 </div>
               </div>
 
@@ -217,6 +242,37 @@ Cookies <br> hello@theblocklisboa.com
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+ <!-- email.js -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('3Qnxkv6xfFEL3lQjl')
+</script>
+
+<script>
+  const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_gr9301n';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!, Thanks');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
 
 </body>
 
