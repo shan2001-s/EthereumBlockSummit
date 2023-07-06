@@ -728,8 +728,6 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
 
 @media (min-width: 1024px) {
   #hero-text {
-   
-  margin-top: 300px;;
   }
 }
 @media (max-width: 480px){
@@ -738,7 +736,7 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
 display: flex;
 justify-items: center;
 text-align: center;
-margin-top: 50px;
+
   }
 }
 @media (max-width: 991px) {
@@ -747,7 +745,6 @@ margin-top: 50px;
     display: flex;
     justify-items: center;
     text-align: center;
-    margin-top: 50px;
     }
   }
 
