@@ -50,7 +50,7 @@
 <body>
  
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center ">
+  <header id="header" style="position: fixed; top: 0;" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">
 
       <div id="logo" class="me-auto">
@@ -60,25 +60,25 @@
   
       </div>
 
-      <div id="navbar" class="navbar order-last order-lg-0" >
+      <div id="navbar"  class="navbar order-last order-lg-0" >
         <ul class=""  >
           <li><a  style="font-family: 'Oswald', sans-serif" class="nav-link scrollto"  href="#schedule">AGENDA</a></li>
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="#buy-tickets">TICKETS</a></li>
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="speakers.html">SPEAKERS</a></li>
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="becomeSponsor.html">BECOME A SPONSOR</a></li>
-          <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="#">GET INVOLVED</a></li> 
-          <li class="ms-5"> 
-                <a href="#"  class="nav-link scrollto"><i class="bi bi-twitter" style=" font-size: 20px;"></i></a> 
+          <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="becomeInvolver.html">GET INVOLVED</a></li> 
+          <li class="ms-5 d-flex"> 
+                <a href="https://twitter.com/TheBlockLisboa" target="_blank" id="NavTwitter"  class="nav-link scrollto"><i class="bi bi-twitter" style=" font-size: 20px;"></i></a> 
           </li>
-          <li> 
-            <a href="#" class="nav-link scrollto"><i class="bi bi-telegram"  style=" font-size: 20px;"></i></a>
+          <li class="d-flex"> 
+            <a href="https://t.me/ebslisboa" target="_blank"  class="nav-link scrollto"><i class="bi bi-telegram"  style=" font-size: 20px;"></i></a>
           </li>
           <!-- <a class="buy-tickets scrollto ps-4 pe-4" style="color: white;"  href="speakers.html">Speakers</a>
           <a class="buy-tickets scrollto ps-4 pe-4" style="color: white;"  href="becomeSponsor.html">Become Sponsors</a>
           <a class="buy-tickets scrollto ps-4 pe-4" style="color: white;"   href="becomeSponsor.html">Become Volumteer</a>
            -->
         </ul>
-       <i class="bi bi-list mobile-nav-toggle"></i> 
+       <i class="bi bi-list mobile-nav-toggle bg-light" style="color: black;"></i> 
       </div><!-- .navbar -->
   
 
@@ -88,9 +88,13 @@
  
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" style=" background-image: url(assets/img/cover.jpg);  background-position: center; /* Center the image */
+  <section id="hero" style="   background-position: center; /* Center the image */
   background-repeat: no-repeat;  /* Do not repeat the image */
   background-size: cover;">
+  <video autoplay muted loop id="myVideo" style="  width: 100%  ">
+    <source src="assets/img/vidnew.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
 
   
   <div class="row">
@@ -102,12 +106,14 @@
      
     </div> -->
     <div class=" d-flex  justify-content-end" id="hero-text" style="" >
-      <div class="hero-container mb-4 pb-0 p-5 text-center  "data-aos="zoom-in" data-aos-delay="100">
-        <h1 class="" style="font-family: 'Teko', sans-serif; font-size: 70px;color:#0b1fb1;" >BUILDING THE FUTURE BLOCK</h1>
+      <div class="hero-container mb-4 pb-0 p-5 text-center" style=" " data-aos="zoom-in" data-aos-delay="100">
+        <div style="">
+          <h1 class="" style="font-family: 'Teko', sans-serif; font-size: 70px;color:#0b1fb1; " >BUILDING THE FUTURE BLOCK</h1>
         <!-- <p style="border-width: 5px ; height: 90px;   border-left-style: solid;  border-color: #f8b422;"></p> -->
         <p class=" mt-5 pb-0  d-flex  justify-content-center" style=" font-size: 30px;"><span style="font-weight: 100;color: #f8b422; font-family: 'Agdasima', sans-serif;
          font-family: 'Teko', sans-serif;font-size: 40px;color:#0f21a8;"> REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT </span> </p>
 
+        </div>
       </div>
     </div>
     <!-- <div class=" d-flex justify-content-center align-items-center" style=" margin-top: -250px; padding: 5px;">
@@ -145,6 +151,7 @@
             white-space: nowrap;
             position: relative;
             width: 100%;
+           font-family:Georgia, 'Times New Roman', Times, serif;
         }
 
         .moving-text {
@@ -165,7 +172,7 @@
     </section><!-- End About Section -->
 
     <!-- What is The block conference -->
-    <section  class="section-with-bg" style="background-color: #8564e0;">
+    <section  class="section-with-bg pt-3" style="background-color: #8564e0;">
 
       <div class="container ">
        <div class="row d-flex align-items-center">
@@ -235,8 +242,8 @@
     <section id="schedule" style="background-color: #fff;" class="section-with-bg" >
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Event Agenda</h2>
-          <p>Here is our event schedule</p>
+          <h2>Agenda</h2>
+          <p>Comming Soon</p>
         </div>
 
         <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
@@ -334,8 +341,8 @@
            </div> -->
 
            <div style="text-align: center;">
-            <div><h2>Day 1 start at 1st November</h2></div>
-            <div><p>coming soon the event schedule</p></div>
+            <div><h2 style=" font-family: 'Teko', sans-serif;">Nov, 6-8th</h2></div>
+           
            
            </div>
 
@@ -413,8 +420,7 @@
               </div>
             </div> -->
             <div style="text-align: center;">
-              <div><h2>Day 2 start at 2nd November</h2></div>
-              <div><p>coming soon the event schedule</p></div>
+              <div><h2 style=" font-family: 'Teko', sans-serif;">Nov, 6-8th</h2></div>
              
              </div>
           </div>
@@ -493,8 +499,7 @@
 
           <div>
             <div style="text-align: center;">
-              <div><h2>Day 3 start at 3th November</h2></div>
-              <div><p>coming soon the event schedule</p></div>
+              <div><h2 style=" font-family: 'Teko', sans-serif;">Nov, 6-8th</h2></div>
              
              </div>
           </div>
@@ -679,8 +684,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Buy Tickets</h2>
-          <p>Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p>
+          <h2 style="color: #f8b422;">Buy Tickets</h2>
+          <!-- <p style="color: white;">Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p> -->
         </div>
 
         <div class="d-flex justify-content-center">
@@ -688,18 +693,18 @@
             <div class="card mb-5 mb-lg-0">
               <div class="card-body" id="active-early">
 
-                <h5 class="card-title text-muted text-uppercase text-center">Super Early Bird</h5>
+                <h5 class=" text-center " style="font-family: 'Teko', sans-serif; font-size: larger; color: #091469;" >200 Super Early Bird Tickets dropping soon</h5>
 
-                <hr>
-                <h6 style="font-family: 'Times New Roman', Times, serif;" class="card-price text-center">$100</h6>
+                <!-- <hr> -->
+                <!-- <h6 style="font-family: 'Times New Roman', Times, serif;" class="card-price text-center"></h6>
                 <h6 style="display: flex; justify-content: center;">
                   <p style=" color: black ; font-size: medium ; font-family: 'Times New Roman', Times, serif;">  <span id="ticketCount1"></span> </p>
-                </h6>
+                </h6> -->
                 <div class="ticket early active">
 
                   <hr>
                   <div class="text-center">
-                    <button id="eventbrite-widget-modal-trigger-1" type="button" class="btn" data-bs-toggle="modal" >Buy On Ethereum</button>
+                    <button id="eventbrite-widget-modal-trigger-1" type="button" class="btn" data-bs-toggle="modal" disabled aria-readonly="true">Connect Wallet</button>
                   </div>
 
                 </div>
@@ -730,22 +735,22 @@
 
             <ul class="faq-list">
               <li>
-                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">What events, outside of crypto talks will be there?
+                <div data-bs-toggle="collapse" href="#faq2" class="collapsed question" style="font-size: 20px;">What events, outside of crypto talks will be there?
                   <i class="bi bi-chevron-down icon-show"></i><i
                     class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    In addition to the talks, discussions, and networking opportunities, we'll be having art installations, musical performances, and special events to maximize the fun during your time at ETHBarcelona.
+                  <p style="font-size: 20px;">
+                    In addition to the talks, discussions, and networking opportunities, we'll be having art installations, musical performances, and special events to maximize the fun during your time at EthereumBlockSubmmit.
                   </p>
                 </div>
               </li>
 
               <li>
-                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Who can participate? <i class="bi bi-chevron-down icon-show"></i><i
+                <div data-bs-toggle="collapse" class="collapsed question" href="#faq1" style="font-size: 20px;">Who can participate? <i class="bi bi-chevron-down icon-show"></i><i
                     class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Anyone who is passionate about decentralization and web3 is welcome to attend ETHBarcelona.
+                  <p style="font-size: 20px;">
+                    Anyone who is passionate about decentralization and web3 is welcome to attend EthereumBlockSubmmit.
                   </p>
                 </div>
               </li>
@@ -832,9 +837,7 @@
               marginwidth="0"
               src="https://maps.google.com/maps?width=929&amp;height=400&amp;hl=en&amp;q=the block lisboa&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
  -->
-
- <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe></div>
-          </div>
+          <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=Pavilh%C3%A3o%20Carlos%20Lopes+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">distance maps</a></iframe></div>
         </div>
       </section>
 
@@ -861,16 +864,16 @@
           
 
             <div class="social-links" >
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="telegram"><i class="bi bi-telegram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://twitter.com/TheBlockLisboa" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.instagram.com/theblocklisboa/" target="_blank"  class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://t.me/ebslisboa" target="_blank" class="telegram"><i class="bi bi-telegram"></i></a>
+              <a href="https://www.linkedin.com/company/the-block-lisboa" target="_blank"  class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.meetup.com/theblock" target="_blank" ><i><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f7f7f7}</style><path d="M99 414.3c1.1 5.7-2.3 11.1-8 12.3-5.4 1.1-10.9-2.3-12-8-1.1-5.4 2.3-11.1 7.7-12.3 5.4-1.2 11.1 2.3 12.3 8zm143.1 71.4c-6.3 4.6-8 13.4-3.7 20 4.6 6.6 13.4 8.3 20 3.7 6.3-4.6 8-13.4 3.4-20-4.2-6.5-13.1-8.3-19.7-3.7zm-86-462.3c6.3-1.4 10.3-7.7 8.9-14-1.1-6.6-7.4-10.6-13.7-9.1-6.3 1.4-10.3 7.7-9.1 14 1.4 6.6 7.6 10.6 13.9 9.1zM34.4 226.3c-10-6.9-23.7-4.3-30.6 6-6.9 10-4.3 24 5.7 30.9 10 7.1 23.7 4.6 30.6-5.7 6.9-10.4 4.3-24.1-5.7-31.2zm272-170.9c10.6-6.3 13.7-20 7.7-30.3-6.3-10.6-19.7-14-30-7.7s-13.7 20-7.4 30.6c6 10.3 19.4 13.7 29.7 7.4zm-191.1 58c7.7-5.4 9.4-16 4.3-23.7s-15.7-9.4-23.1-4.3c-7.7 5.4-9.4 16-4.3 23.7 5.1 7.8 15.6 9.5 23.1 4.3zm372.3 156c-7.4 1.7-12.3 9.1-10.6 16.9 1.4 7.4 8.9 12.3 16.3 10.6 7.4-1.4 12.3-8.9 10.6-16.6-1.5-7.4-8.9-12.3-16.3-10.9zm39.7-56.8c-1.1-5.7-6.6-9.1-12-8-5.7 1.1-9.1 6.9-8 12.6 1.1 5.4 6.6 9.1 12.3 8 5.4-1.5 9.1-6.9 7.7-12.6zM447 138.9c-8.6 6-10.6 17.7-4.9 26.3 5.7 8.6 17.4 10.6 26 4.9 8.3-6 10.3-17.7 4.6-26.3-5.7-8.7-17.4-10.9-25.7-4.9zm-6.3 139.4c26.3 43.1 15.1 100-26.3 129.1-17.4 12.3-37.1 17.7-56.9 17.1-12 47.1-69.4 64.6-105.1 32.6-1.1.9-2.6 1.7-3.7 2.9-39.1 27.1-92.3 17.4-119.4-22.3-9.7-14.3-14.6-30.6-15.1-46.9-65.4-10.9-90-94-41.1-139.7-28.3-46.9.6-107.4 53.4-114.9C151.6 70 234.1 38.6 290.1 82c67.4-22.3 136.3 29.4 130.9 101.1 41.1 12.6 52.8 66.9 19.7 95.2zm-70 74.3c-3.1-20.6-40.9-4.6-43.1-27.1-3.1-32 43.7-101.1 40-128-3.4-24-19.4-29.1-33.4-29.4-13.4-.3-16.9 2-21.4 4.6-2.9 1.7-6.6 4.9-11.7-.3-6.3-6-11.1-11.7-19.4-12.9-12.3-2-17.7 2-26.6 9.7-3.4 2.9-12 12.9-20 9.1-3.4-1.7-15.4-7.7-24-11.4-16.3-7.1-40 4.6-48.6 20-12.9 22.9-38 113.1-41.7 125.1-8.6 26.6 10.9 48.6 36.9 47.1 11.1-.6 18.3-4.6 25.4-17.4 4-7.4 41.7-107.7 44.6-112.6 2-3.4 8.9-8 14.6-5.1 5.7 3.1 6.9 9.4 6 15.1-1.1 9.7-28 70.9-28.9 77.7-3.4 22.9 26.9 26.6 38.6 4 3.7-7.1 45.7-92.6 49.4-98.3 4.3-6.3 7.4-8.3 11.7-8 3.1 0 8.3.9 7.1 10.9-1.4 9.4-35.1 72.3-38.9 87.7-4.6 20.6 6.6 41.4 24.9 50.6 11.4 5.7 62.5 15.7 58.5-11.1zm5.7 92.3c-10.3 7.4-12.9 22-5.7 32.6 7.1 10.6 21.4 13.1 32 6 10.6-7.4 13.1-22 6-32.6-7.4-10.6-21.7-13.5-32.3-6z"/></svg></i></a>
             </div>
 
           </div>
           <div class="col-md-3 footer-links">
-            <p style="color: black;">
+            <p style="color: black; font-size: 18px;">
               Privacy policy <br>
 Terms of conditions
 Cookies
