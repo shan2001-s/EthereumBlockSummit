@@ -452,6 +452,10 @@ h6 {
   .navbar ul {
     display: none;
   }
+  #twitter_head{
+    margin-right: 30px;
+  }
+
 }
 
 .navbar-mobile {
@@ -727,8 +731,12 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
 }
 
 @media (min-width: 1024px) {
-  #hero-text {
-  }
+  
+    #twitter_head{
+      margin-left: 30px;
+    }
+  
+  
 }
 @media (max-width: 480px){
   #hero-text {
