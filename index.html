@@ -95,11 +95,22 @@
   <section id="hero" style=""  style="   background-position: center; /* Center the image */
   background-repeat: no-repeat;  /* Do not repeat the image */
   background-size: cover;">
-  <video autoplay muted loop id="myVideo" style="  width:100%;
-  height:100vh;
-  object-fit: cover;">
-    <source src="assets/img/blockvidiphone4.mp4" type="video/mp4">
-  </video>
+<video autoplay muted loop id="myVideo" style="width: 100%; height: 100vh; object-fit: cover;"></video>
+
+<script>
+  var videoElement = document.getElementById("myVideo");
+  var sourceElement = document.createElement("source");
+
+  if (window.innerWidth >= 768) { // For desktop screens and tablets
+    sourceElement.src = "assets/img/blockvidiphone4.mp4";
+  } else { // For mobile screens
+    sourceElement.src = "assets/img/blockvidiphone6.mp4";
+  }
+
+  sourceElement.type = "video/mp4";
+  videoElement.appendChild(sourceElement);
+</script>
+
   <!-- <img style="  width:100%;
   height:100vh;
   object-fit: cover;" src="assets/img/video.gif" alt=""> -->
