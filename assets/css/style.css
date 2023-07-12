@@ -928,6 +928,56 @@ color: #4724a8'
   margin-bottom: 10px;
 } */
 
+.ShowLogo {
+  position: relative;
+  display: inline-block;
+  color: white;
+
+  
+
+
+}
+.ShowLogo:hover{
+  background-color:  #4724a8;
+}
+
+
+
+.ShowIcon{
+  color:white;
+  background-color: #276cff;
+  cursor: pointer; position: absolute; margin-top: -200px; margin-left: 120px;
+  display: none;
+  padding: 10px;
+border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+.ShowIcon{
+  color:white;
+  background-color: #276cff;
+  cursor: pointer; position: absolute; margin-top: -160px; margin-left: 100px;
+  display: none;
+  padding: 10px;
+border-radius: 50%;
+}
+}
+
+.speakerh:hover+.ShowIcon {
+  display: block;
+}
+.ShowIcon:hover{
+  display: block;
+}
+.speaker{
+  border-style: solid;
+  border-color:  #4724a8;
+}
+.speakerh{
+ 
+}
+
 
 /*--------------------------------------------------------------
 # Speakers.Html
