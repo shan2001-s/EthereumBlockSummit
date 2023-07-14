@@ -57,11 +57,11 @@
   ======================================================== -->
 </head>
 
-<body>
+<body >
  
   <!-- ======= Header ======= -->
-  <header id="header" style="position: fixed; top: 0;" class="d-flex align-items-center">
-    <div class="container-fluid container-xxl d-flex align-items-center">
+  <header id="header" style="position: fixed; top: 0;" class="d-flex align-items-center" >
+    <div id='headerItem' class="container-fluid container-xxl d-flex align-items-center" >
 
       <div id="logo" class="me-auto">
         <!-- Uncomment below if you prefer to use a text logo -->
@@ -84,7 +84,7 @@
             <a href="https://t.me/ebslisboa" target="_blank"  class="nav-link scrollto"><i class="bi bi-telegram"  style=" font-size: 20px;"></i></a>
           </li>
         </ul>
-       <i class="bi bi-list mobile-nav-toggle bg-light " style="color: black; margin-right: 60px;"></i> 
+       <i  class="bi bi-list mobile-nav-toggle bg-light " style="color: black; margin-right: 60px; width: fit-content;"></i> 
       </div><!-- .navbar -->
       
   
@@ -95,7 +95,7 @@
  
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" style=""  style="   background-position: center; /* Center the image */
+  <section id="hero"   style="   background-position: center; /* Center the image */
   background-repeat: no-repeat;  /* Do not repeat the image */
   background-size: cover;">
 <!-- <video autoplay muted loop id="myVideo" style="width: 100%; height: 100vh; object-fit: cover;"></video>
@@ -127,15 +127,73 @@
       </div>
      
     </div> -->
-    <div class=" d-flex  justify-content-center" id="hero-text" >
+    <div class=" d-flex  justify-content-center " id="hero-text" >
       <div class="hero-container mb-4 pb-0 p-5 text-center" style=" " >
         <div style=" text-align: center;margin-top: -200px; color: white;">
           <h1 class="" style="font-family: 'Teko', sans-serif; font-size: 50px;color:white; " >BUILDING THE FUTURE BLOCK</h1>
         <!-- <p style="border-width: 5px ; height: 90px;   border-left-style: solid;  border-color: #8564e0;"></p> -->
-        <p class=" mt-1 pb-0  d-flex  justify-content-center" style=" font-size: 20px;"><span style="font-weight: 100;color: #8564e0; font-family: 'Agdasima', sans-serif;
-         font-family: 'Teko', sans-serif;font-size: 25px;color:white;"> REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT </span> </p>
-
+        <p class=" mt-1 pb-0  d-flex  justify-content-center " style=" font-size: 20px;"><span style="font-weight: 100;color: #8564e0; font-family: 'Agdasima', sans-serif;
+         font-family: 'Teko', sans-serif;font-size: 25px;color:white;"> REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT <br> 
+        
+        <div id="countdown" style="background-color: rgba(255, 255, 255, 0.182); ">
+          <div class="row w-auto">
+            <div id="days" class="col-3 countdown-number" style="font-size: 20px;"></div>
+            <div id="hours" class="col-3 countdown-number" style="font-size: 20px;"></div>
+            <div id="minutes" class="col-3 countdown-number" style="font-size: 20px;"></div>
+            <div id="seconds" class="col-3 countdown-number" style="font-size: 20px;"></div>
+          </div>
         </div>
+        
+        <style>
+          .countdown-number {
+            font-size: 30px;
+          }
+        </style>
+        
+        <script>
+          // Set the target date
+          const targetDate = new Date("November 1, 2023 00:00:00");
+        
+          function updateCountdown() {
+            // Get the current date and time
+            const now = new Date();
+        
+            // Calculate the time remaining
+            const timeDiff = targetDate - now;
+            if (timeDiff <= 0) {
+              // The event has already started
+              document.getElementById("countdown").style.display = "none";
+              return;
+            }
+        
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+        
+            // Update the countdown display
+            document.getElementById("days").innerHTML = '<span class="countdown-number">' + days + '</span><br> Day';
+            document.getElementById("hours").innerHTML = '<span class="countdown-number">' + hours + '</span><br> Hour';
+            document.getElementById("minutes").innerHTML = '<span class="countdown-number">' + minutes + '</span><br> Minute';
+            document.getElementById("seconds").innerHTML = '<span class="countdown-number">' + seconds + '</span><br> Second';
+        
+            // Schedule the next update after 1 second
+            setTimeout(updateCountdown, 1000);
+          }
+        
+          // Start the countdown
+          updateCountdown();
+        </script>
+        
+        
+         </span> 
+        
+          </p>
+ 
+        
+        </div>
+        
       </div>
     </div>
     <!-- <div class=" d-flex justify-content-center align-items-center" style=" margin-top: -250px; padding: 5px;">
@@ -153,7 +211,7 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <!-- <section id="about" style="background-color: white;" >
+    <section id="about" style="background-color: white;" >
       <div class="container" data-aos="fade-up">
         <div class="text-container"  style="color: #8564e0;">
           <span class="moving-text">NOVEMBER 6-8, LISBOA</span>
@@ -192,8 +250,8 @@
         }
       </style>
       </div>
-    </section>-->
-    <section id="about" style="background-color: whitesmoke;" >
+    </section>
+    <!-- <section id="about" style="background-color: whitesmoke;" >
       <div class="container" data-aos="fade-up">
        
           <div class=" row" >
@@ -213,11 +271,11 @@
        
      
       </div>
-    </section>
+    </section> -->
     <!-- End About Section  -->
 
     <!-- What is The block conference -->
-    <section  class=" pt-3" style="">
+    <section  class=" pt-3" >
 
       <div class="container ">
        <div class="row d-flex align-items-center">
@@ -297,7 +355,7 @@
 
 
     <!-- ======= Schedule Section ======= -->
-    <section id="schedule" style="" class="section-with-bg" >
+    <section id="schedule"  class="section-with-bg" >
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Agenda</h2>
@@ -861,7 +919,7 @@
     </section><!-- End Buy Ticket Section -->
 
     <!-- Become A Sponsor Section -->
-    <section  id="becomeASponsor" class=" pt-3" style="">
+    <section  id="becomeASponsor" class=" pt-3" >
 
       <div class="container ">
        <div class="row d-flex align-items-center">
@@ -1135,35 +1193,7 @@ ethereumblocksummit@protonmail.com
   <script src="assets/js/buyTicket.js"></script>
   <script src="assets/js/showSpeakerDetail.js"></script>
 
-  <script>
-    // Set the date we're counting down to (November 1st)
-    var countDownDate = new Date("November 1, 2023 00:00:00").getTime();
 
-    // Update the countdown every 1 second
-    var countdownInterval = setInterval(function() {
-      // Get the current date and time
-      var now = new Date().getTime();
-
-      // Calculate the distance between now and the countdown date
-      var distance = countDownDate - now;
-
-      // Calculate days, hours, minutes, and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Display the countdown
-      var countdownElement = document.getElementById("countdown");
-      countdownElement.innerHTML =   days + "<span style='opacity: 0.5'>d</span> " + hours + "<span style='opacity: 0.5'>h</span> " + minutes + "<span style='opacity: 0.5'>m</span> " + seconds + "<span style='opacity: 0.5'>s &nbsp</span>" + ' till Conference starts';
-
-      // If the countdown is finished, display a message
-      if (distance < 0) {
-        clearInterval(countdownInterval);
-        countdownElement.innerHTML = "Event has started!";
-      }
-    }, 1000);
-  </script>
 
   <script>
     // Define your array of speakers

@@ -246,11 +246,6 @@ h6 {
   cursor: pointer;
 }
 
-.countdown {
-  margin-top: 20px;
-  font-family: Arial, sans-serif;
-  font-size: 20px;
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -473,7 +468,7 @@ h6 {
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
-  right: 15px;
+
 }
 
 .navbar-mobile ul {
@@ -723,13 +718,6 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
     opacity: 0;
   }
 }
-
-@media (max-width: 480px) {
-  #schedule .nav-tabs a {
-    padding: 8px 30px;
-  }
-}
-
 @media (min-width: 1024px) {
   
     #twitter_head{
@@ -738,28 +726,40 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
     #carousel2{
       background-color: #091469 ; margin-bottom: -40px;
     }
+    #countdown{
+      position: absolute; top: 550px; right: 80px;  padding-right: 20px;
+    }
+    
   
   
 }
 @media (max-width: 480px){
   #hero-text {
-   margin-top: -70px;
+   margin-top: -200px;
 display: flex;
 justify-items: center;
 text-align: center;
 
   }
+  #headerItem{
+    width: fit-content;
+  }
+ 
   #carousel2{
     background-color: #091469 ; margin-bottom: 50px;
+  }
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
   }
 }
 @media (max-width: 991px) {
   #hero-text {
-    margin-top: -65px;
+    margin-top: -200px;
     display: flex;
     justify-items: center;
     text-align: center;
     }
+   
     /* #carousel2{
       background-color: #091469 ; margin-bottom: 50px;
     } */
