@@ -143,15 +143,15 @@
   </div> -->
   </section><!-- End Hero Section -->
 
-  <div class="text-container">
+  <!-- <div class="text-container">
     <span class="moving-text">Conference July 5-7th</span>
-</div>
+</div> -->
 
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" style="background-color: white;" >
+    <!-- <section id="about" style="background-color: white;" >
       <div class="container" data-aos="fade-up">
         <div class="text-container"  style="color: #8564e0;">
           <span class="moving-text">NOVEMBER 6-8, LISBOA</span>
@@ -190,7 +190,29 @@
         }
       </style>
       </div>
-    </section><!-- End About Section -->
+    </section>-->
+    <section id="about" style="background-color: whitesmoke;" >
+      <div class="container" data-aos="fade-up">
+       
+          <div class=" row" >
+           
+              <div class="col-md-6  text-lg-start text-center"  >
+               <h1 style="color: #8564e0;"> November 1 - 3</h1>
+              </div>
+              <div class="col-md-6 text-lg-end text-center">
+               <h1 style="color: #8564e0;" id="countdown"> 47d 20h 13m 14s till Conference starts</h1>
+              </div>
+             </div>
+
+           
+
+    
+         
+       
+     
+      </div>
+    </section>
+    <!-- End About Section  -->
 
     <!-- What is The block conference -->
     <section  class=" pt-3" style="">
@@ -1123,6 +1145,36 @@ ethereumblocksummit@protonmail.com
   <!--  buyTicket JS File -->
   <script src="assets/js/buyTicket.js"></script>
   <script src="assets/js/showSpeakerDetail.js"></script>
+
+  <script>
+    // Set the date we're counting down to (November 1st)
+    var countDownDate = new Date("November 1, 2023 00:00:00").getTime();
+
+    // Update the countdown every 1 second
+    var countdownInterval = setInterval(function() {
+      // Get the current date and time
+      var now = new Date().getTime();
+
+      // Calculate the distance between now and the countdown date
+      var distance = countDownDate - now;
+
+      // Calculate days, hours, minutes, and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      var countdownElement = document.getElementById("countdown");
+      countdownElement.innerHTML =   days + "<span style='opacity: 0.5'>d</span> " + hours + "<span style='opacity: 0.5'>h</span> " + minutes + "<span style='opacity: 0.5'>m</span> " + seconds + "<span style='opacity: 0.5'>s </span>" + ' till Conference starts';
+
+      // If the countdown is finished, display a message
+      if (distance < 0) {
+        clearInterval(countdownInterval);
+        countdownElement.innerHTML = "Event has started!";
+      }
+    }, 1000);
+  </script>
 
   <script>
     // Define your array of speakers
