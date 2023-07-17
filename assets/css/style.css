@@ -719,6 +719,8 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
   }
 }
 @media (min-width: 1024px) {
+  #hero-text {
+    margin-top: -200px;}
   
     #twitter_head{
       margin-left: 30px;
@@ -727,15 +729,27 @@ radial-gradient(at 2% 50%, hsla(178,69%,68%,1) 0px, transparent 50%);
       background-color: #091469 ; margin-bottom: -40px;
     }
     #countdown{
-      position: absolute; top: 550px; right: 80px;  padding-right: 20px;
+      position: absolute; bottom: 50px; right: 80px;  padding-right: 20px;
     }
+    .countdown-number {
+      font-size: 30px;
+    }
+    #days,
+    #hours,
+    #minutes,
+    #seconds
+    {
+      font-size: 20px;
+    }
+    
+    
     
   
   
 }
 @media (max-width: 480px){
   #hero-text {
-   margin-top: -200px;
+    margin-top: -350px;
 display: flex;
 justify-items: center;
 text-align: center;
@@ -751,13 +765,34 @@ text-align: center;
   #schedule .nav-tabs a {
     padding: 8px 30px;
   }
+   .countdown-number {
+      font-size: 16px;
+    }
+    #days,
+    #hours,
+    #minutes,
+    #seconds
+    {
+      font-size: 13px;
+    }
 }
 @media (max-width: 991px) {
   #hero-text {
-    margin-top: -200px;
+    margin-top: -350px;
     display: flex;
     justify-items: center;
     text-align: center;
+   
+    }
+    .countdown-number {
+      font-size: 16px;
+    }
+    #days,
+    #hours,
+    #minutes,
+    #seconds
+    {
+      font-size: 13px;
     }
    
     /* #carousel2{
