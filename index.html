@@ -60,7 +60,7 @@
 <body >
  
   <!-- ======= Header ======= -->
-  <header id="header" style="position: fixed; top: 0;" class="d-flex align-items-center" >
+  <header id="header" style="position: fixed; top: 0; background-color: black; box-shadow: 10px 5px 10px #4724a8;" class="d-flex align-items-center" >
     <div id='headerItem' class="container-fluid container-xxl d-flex align-items-center" >
 
       <div id="logo" class="me-auto">
@@ -75,7 +75,7 @@
           <li><a  style="font-family: 'Oswald', sans-serif" class="nav-link scrollto"  href="#schedule">AGENDA</a></li>
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="#buy-tickets">TICKETS</a></li>
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="speakers.html">SPEAKERS</a></li>
-          <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="#becomeASponsor">BECOME A SPONSOR</a></li>
+          <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="becomeSponsor.html">BECOME A SPONSOR</a></li>
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="becomeInvolver.html">GET INVOLVED</a></li> 
           <li class=" d-flex" id="twitter_head"> 
                 <a href="https://twitter.com/TheBlockLisboa" target="_blank" id="NavTwitter"  class="nav-link scrollto"><i class="bi bi-twitter" style=" font-size: 20px;"></i></a> 
@@ -84,7 +84,7 @@
             <a href="https://t.me/ebslisboa" target="_blank"  class="nav-link scrollto"><i class="bi bi-telegram"  style=" font-size: 20px;"></i></a>
           </li>
         </ul>
-       <i  class="bi bi-list mobile-nav-toggle bg-light " style="color: black; margin-right: 60px; width: fit-content;"></i> 
+       <i  class="bi bi-list mobile-nav-toggle bg-dark " style="color: black; margin-right: 60px; width: fit-content;"></i> 
       </div><!-- .navbar -->
       
   
@@ -95,46 +95,43 @@
  
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero"   style="   background-position: center; /* Center the image */
+  <!-- Large Screen Section -->
+  <section  class="container d-none d-md-block"  style="   background-position: center; /* Center the image */
   background-repeat: no-repeat;  /* Do not repeat the image */
   background-size: cover;">
-<!-- <video autoplay muted loop id="myVideo" style="width: 100%; height: 100vh; object-fit: cover;"></video>
-
-<script>
-  var videoElement = document.getElementById("myVideo");
-  var sourceElement = document.createElement("source");
-
-  if (window.innerWidth >= 768) { // For desktop screens and tablets
-    sourceElement.src = "assets/img/blockvidmain.mp4";
-  } else { // For mobile screens
-    sourceElement.src = "assets/img/blockvidiphone7.mp4";
-  }
-
-  sourceElement.type = "video/mp4";
-  videoElement.appendChild(sourceElement);
-</script> -->
-
-  <img style="  width:100%;
-  height:100vh;
-  object-fit: cover;" src="https://s11.gifyu.com/images/SWNJz.gif" alt="">
+  <div class="row mt-5 " style="display: flex; align-items: center;">
 
   
-  <div class="row">
-   
-    <!-- <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center" style="margin-top: 150px; padding: 5px;">
-      <div style="  padding: 5px;">
-        <img src="https://uploads-ssl.webflow.com/6423bd30348f0d8c79baea0a/642716a9583eb9c5863d7341_eth.gif" alt="">
+  <div class="col-md-6">
+    <img style="  width:100%;
+height:100vh;
+object-fit: cover;" src="https://s11.gifyu.com/images/SWNJz.gif" alt="">
+  </div>
+    <div class="col-md-6 mt-5">
+      <div class=" align-items-center text-info" style="color: #6610f2;">
+      <div class="d-flex justify-content-center">
+        <img style="height: 150px;" src="assets/img/header.png" >
       </div>
-     
-    </div> -->
+      
+        <h1 class="mt-2 d-flex justify-content-center" style="color: #4724a8;">BUILDING THE FUTURE BLOCK</h1>
+        <h2 class="d-flex justify-content-center" style="color: #4724a8;">REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT</h2>
+        <!-- <div class="text-center">
+         <a class="seemore-speaker scrollto"  href="speakers.html"  >Buy Ticket</a> 
+        </div> -->
+      
+
+</div >
+  </div>
+  </div>
   
+<!-- 
+  The Old Version
     <div class=" d-flex  justify-content-center " id="hero-text" >
       <div class="hero-container mb-4 pb-0 p-5 text-center" style=" " >
-        <div style=" text-align: center; color: white;">
-          <h1 class="" style="font-family: 'Teko', sans-serif; font-size: 50px;color:white; " >BUILDING THE FUTURE BLOCK</h1>
-        <!-- <p style="border-width: 5px ; height: 90px;   border-left-style: solid;  border-color: #8564e0;"></p> -->
-        <p class=" mt-1 pb-0  d-flex  justify-content-center " style=" font-size: 20px;"><span style="font-weight: 100;color: #8564e0; font-family: 'Agdasima', sans-serif;
-         font-family: 'Teko', sans-serif;font-size: 25px;color:white;"> REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT <br> 
+        <div style=" text-align: center; color: #6610f2;">
+          <h1 class="" style="font-family: 'Teko', sans-serif; font-size: 50px;color:#6610f2; " >BUILDING THE FUTURE BLOCK</h1>
+         <p class=" mt-1 pb-0  d-flex  justify-content-center " style=" font-size: 20px;"><span style="font-weight: 100;color: #8564e0; font-family: 'Agdasima', sans-serif;
+         font-family: 'Teko', sans-serif;font-size: 25px;color:#6610f2;"> REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT <br> 
         
         <div id="countdown" style="background-color: rgba(255, 255, 255, 0.182); ">
           <div class="row w-auto">
@@ -194,23 +191,45 @@
         </div>
         
       </div>
-    </div>
-    <!-- <div class=" d-flex justify-content-center align-items-center" style=" margin-top: -250px; padding: 5px;">
-      <div style="  padding: 5px;">
-        <img style="height: 360px;" src="https://uploads-ssl.webflow.com/6423bd30348f0d8c79baea0a/642716a9583eb9c5863d7341_eth.gif" alt="">
-      </div>
-  </div> -->
-  </section><!-- End Hero Section -->
-
-  <!-- <div class="text-container">
-    <span class="moving-text">Conference July 5-7th</span>
-</div> -->
-
+    </div> -->
+     </section>
+       <!-- Phone Screen Section -->
+       <section  class="container mt-5 d-md-none"  style="   background-position: center; /* Center the image */
+       background-repeat: no-repeat;  /* Do not repeat the image */
+       background-size: cover;">
+       <div class="row mt-5 " style="display: flex; align-items: center;">
+     
+         <div class="col-md-6 mt-5">
+           <div class=" align-items-center text-info" style="color: #6610f2;">
+           <div class="d-flex justify-content-center">
+             <img style="height: 150px;" src="assets/img/header.png" >
+           </div>
+           
+             <h1 class="mt-2 d-flex justify-content-center" style="color: #4724a8;">BUILDING THE FUTURE BLOCK</h1>
+             <h4 class="d-flex justify-content-center" style="color: #4724a8;">REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT</h4>
+             <!-- <div class="text-center">
+              <a class="seemore-speaker scrollto"  href="speakers.html"  >Buy Ticket</a> 
+             </div> -->
+           
+     
+     </div >
+       </div>
+       <div class="col-md-6">
+         <img style="  width:100%;
+     height:50vh;
+     object-fit: cover;" src="https://s11.gifyu.com/images/SWNJz.gif" alt="">
+       </div>
+       </div>
+       
+    
+          </section>
+     
+     <!-- End Hero Section -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" style="background-color: white;" >
+    <section id="about" style="background-color: black;" >
       <div class="container" data-aos="fade-up">
         <div class="text-container"  style="color: #8564e0;">
           <span class="moving-text">NOVEMBER 6-8th<b>, </b> LISBOA</span>
@@ -353,13 +372,13 @@
     <section id="schedule"  class="section-with-bg" >
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Agenda</h2>
-          <p style="color: white;">Topics/Content: DAO growth, DataFi, Security & Compliance, LSDfi, Stablecoins, Intents, SSI, Account Abstraction, Cross-chain tech, Governance, RWA, Layer-2 scaling & ZK tech, Liquidity mining & staking, NFTs, erc-4337, Public Goods/ReFi, Prediction Models, Dev Tools, UI/UX, VC Track, Live Whale Tank Show and more soon! </p> 
+          <h2 class="text-black">Agenda</h2>
+          <p style="color: black;">Topics/Content: DAO growth, DataFi, Security & Compliance, LSDfi, Stablecoins, Intents, SSI, Account Abstraction, Cross-chain tech, Governance, RWA, Layer-2 scaling & ZK tech, Liquidity mining & staking, NFTs, erc-4337, Public Goods/ReFi, Prediction Models, Dev Tools, UI/UX, VC Track, Live Whale Tank Show and more soon! </p> 
         </div>
 
         <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
           <li class="nav-item">
-            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
+            <a class="nav-link active"  style="" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Day 2</a>
@@ -452,7 +471,7 @@
            </div> -->
 
            <div style="text-align: center;">
-            <div><h2 style=" font-family: 'Teko', sans-serif;">Nov, 6-8th</h2></div>
+            <div><h2 style=" font-family: 'Teko', sans-serif; color: #4724a8;">Nov, 6-8th</h2></div>
            
            
            </div>
@@ -792,12 +811,12 @@
     <!-- =======  F.A.Q Section ======= -->
 
      <!-- ======= Speaker Details Sectionn ======= -->
-     <section id="speakers"  >
-      <div class="container" >
+     <section id="speakers"  style="background-color: black;" >
+      <div class="container" style="background-color: black;">
         
         <!-- Event Speak Header -->
-        <section id=""  class="mt-5">
-          <div class="container" data-aos="fade-up">
+        <div id=""  class="mt-5 ">
+          <div class="container bg-black" data-aos="fade-up">
             <div class="section-header">
                 <h2 style="font-family: 'Teko', sans-serif; font-size: 40px;">Event Speakers <span style="font-size: 28px;"> [a-z order]</span></h2>
                 <!-- <p>Here is our speakers</p> -->
@@ -811,6 +830,7 @@
                     <p style="color:  #4724a8; line-height: 1.2;font-family: 'Teko', sans-serif; font-size: 28px;">
                       Our curated lineup of speakers offers a diverse range of perspectives on blockchain technology.<br>
                       Join us as we delve into the future of finance, exploring innovative concepts, discovering new talent, emerging trends and groundbreaking advancements in the cryptoworld.
+                    </p>
                     <!-- <button class="btn btn-outline " style="color: #f8b422; border-color: #f8b422;">Apply for Speaker</button> -->
                     <!-- <div class="d-flex justify-content-start">
                         <a class="seemore-speaker scrollto p-4"  href="becomeSpeaker.html" >Become A Speaker</a>
@@ -829,7 +849,7 @@
     </div>
             
           </div>
-        </section>
+        </div>
         <!-- End Event Speak Header -->
 
 
@@ -875,16 +895,16 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2 style="color: white">Buy Tickets</h2>
+          <h2 style="color: black">Buy Tickets</h2>
           <!-- <p style="color: white;">Velit consequatur consequatur inventore iste fugit unde omnis eum aut.</p> -->
         </div>
 
         <div class="d-flex justify-content-center">
           <div class="col-lg-4 " data-aos="fade-up" data-aos-delay="100">
-            <div class="card mb-5 mb-lg-0">
+            <div class="card mb-5 mb-lg-0 bg-black">
               <div class="card-body" id="active-early">
 
-                <h5 class=" text-center " style="font-family: 'Teko', sans-serif; font-size: larger; color: #091469;" >200 Super Early Bird Tickets dropping soon</h5>
+                <h5 class=" text-center " style="font-family: 'Teko', sans-serif; font-size: larger; color: #6610f2;" >200 Super Early Bird Tickets dropping soon</h5>
 
                 <!-- <hr> -->
                 <!-- <h6 style="font-family: 'Times New Roman', Times, serif;" class="card-price text-center"></h6>
@@ -893,7 +913,7 @@
                 </h6> -->
                 <div class="ticket early active">
 
-                  <hr>
+                  <hr style="color: darkgrey;">
                   <div class="text-center">
                     <button id="eventbrite-widget-modal-trigger-1" type="button" class="btn" data-bs-toggle="modal" disabled aria-readonly="true">Connect Wallet</button>
                   </div>
@@ -997,14 +1017,111 @@
     <!-- End Sponsor Section -->
 
 
+     <!-- Become A Sponsor Section -->
+ <!-- <section  id="becomeASponsor" class=" pt-3 bg-success" >
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+        <h2 style="font-family: 'Teko', sans-serif; font-size: 40px;color:  #4724a8">Become A Sponsor <span style="font-size: 28px;"> </span></h2>
+      
+      </div>
+    <div class="row" style="color: white;">
+
+      <div class="col-md-12" style="text-align: left; z-index: auto; ">
+        <div class="details-aboutUs" style="text-align: left; ">
+
+          <div style="color: white; display: flex;  justify-content: center;">
+            <p style="color:  #4724a8; line-height: 1.2;font-family: 'Teko', sans-serif; font-size: 28px;">
+              Experience an unforgettable event featuring a buzzing exhibition area, startup competitions, workshops and more! </p>
+          </div>
+          <h2 style="  width: 100%; 
+          text-align: center; 
+          border-bottom: 1px solid #000; 
+          line-height: 0.1em;
+          margin: 10px 0 20px; "><span style="background-color: white;">THIS IS A TEST</span></h2>
+<p>this is some content other</p>
+          <div class="row  ">
+            <div class="col-md-2 d-flex justify-content-center bg-danger " style="">
+              <div class=" bg-info  " >
+               <div class="d-flex justify-content-center">
+                <h3 class=" text-black d-flex justify-content-center " style=" border: 2px solid black; border-radius: 50%; height: 50px ;
+                width: 50px; line-height: 50px; text-align: center;">1</h3>
+               </div>
+                <h3 class=" text-black">Step One</h3>
+                <p class=" text-black d-flex justify-content-center" style="font-size: 18px;">Choose your <br/>
+                  booth</p>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center bg-danger " style="">
+              <div class=" bg-info  " >
+               <div class="d-flex justify-content-center">
+                <h3 class=" text-black d-flex justify-content-center " style=" border: 2px solid black; border-radius: 50%; height: 50px ;
+                width: 50px; line-height: 50px; text-align: center;">1</h3>
+               </div>
+                <h3 class=" text-black">Step One</h3>
+                <p class=" text-black d-flex justify-content-center" style="font-size: 18px;">Choose your <br/>
+                  booth</p>
+              </div>
+            </div>
+            <div class=" bg-info  " >
+              <div class="d-flex justify-content-center">
+               <h3 class=" text-black d-flex justify-content-center " style=" border: 2px solid black; border-radius: 50%; height: 50px ;
+               width: 50px; line-height: 50px; text-align: center;">1</h3>
+              </div>
+               <h3 class=" text-black">Step One</h3>
+               <p class=" text-black d-flex justify-content-center" style="font-size: 18px;">Choose your <br/>
+                 booth</p>
+             </div>
+           </div>
+           <div class=" bg-info  " >
+            <div class="d-flex justify-content-center">
+             <h3 class=" text-black d-flex justify-content-center " style=" border: 2px solid black; border-radius: 50%; height: 50px ;
+             width: 50px; line-height: 50px; text-align: center;">1</h3>
+            </div>
+             <h3 class=" text-black">Step One</h3>
+             <p class=" text-black d-flex justify-content-center" style="font-size: 18px;">Choose your <br/>
+               booth</p>
+           </div>
+         </div>
+         <div class=" bg-info  " >
+          <div class="d-flex justify-content-center">
+           <h3 class=" text-black d-flex justify-content-center " style=" border: 2px solid black; border-radius: 50%; height: 50px ;
+           width: 50px; line-height: 50px; text-align: center;">1</h3>
+          </div>
+           <h3 class=" text-black">Step One</h3>
+           <p class=" text-black d-flex justify-content-center" style="font-size: 18px;">Choose your <br/>
+             booth</p>
+         </div>
+       </div> 
+            <div class="col-md-2">
+              <div class=" bg-info" >
+                <h3 class=" text-black">1</h3>
+                <h3 class=" text-black">Step One</h3>
+              </div>
+            </div>
+
+          </div>
+
+          
+        </div>
+      </div>
+   </div>
+
+
+
+  </div>
+
+    </section>  -->
+    <!-- End Sponsor Section -->
+
+
 
     <!-- FAQ Section -->
-    <section id="faq" class="">
+    <section id="faq" class="section-with-bg">
 
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2 style="color:  #4724a8;;">F.A.Q </h2>
+          <h2 class="text-dark">F.A.Q </h2>
         </div>
 
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -1116,8 +1233,8 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-<footer id="footer" style="background-color: white;">
-    <div class="footer-top" style="background-color: white;">
+<footer id="footer" style="background-color: black;">
+    <div class="footer-top" style="background-color: black;">
       <div class="container">
         <div class="row">
 
@@ -1141,13 +1258,13 @@
 
           </div>
           <div class="col-md-3 footer-links">
-            <p style="color: black; font-size: 18px;">
+            <p style="color: #6610f2; font-size: 18px;">
               Privacy policy <br>
 Terms of conditions
 Cookies
 <br>
-<a  href = "mailto:  hello@theblocklisboa.com"> hello@theblocklisboa.com</a> <br>
-<a  href = "mailto:  ethereumblocksummit@gmail.com"> ethereumblocksummit@gmail.com</a>
+<a  style=" color: #6610f2;  text-decoration: underline;" href = "mailto:  hello@theblocklisboa.com"> hello@theblocklisboa.com</a> <br>
+<a style="color: #6610f2;  text-decoration: underline;"  href = "mailto:  ethereumblocksummit@gmail.com"> ethereumblocksummit@gmail.com</a>
             </p>
           </div>
 
@@ -1280,7 +1397,7 @@ Cookies
                 </div>
               <div class="details" style="line-height: 1.2;  text-align: center; justify-content: center; justify-items: center;" >
                 <p style='text-size: 30px; '><a href="${speaker.link}">${speaker.name}</a></p>
-                <p style='color:black;'>${speaker.position}</p>
+                <p style='color:#6610f2;'>${speaker.position}</p>
                 
               </div>
             </div>

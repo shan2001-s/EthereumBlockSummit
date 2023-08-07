@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
+  background: black;
   color: #2f3138;
   font-family: 'Teko', sans-serif;
 }
@@ -359,7 +359,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color:#4400ff;
+  color:#8564e0;
 }
 
 .navbar .dropdown ul {
@@ -1015,7 +1015,7 @@ border-radius: 50%;
 # Speakers.Html
 --------------------------------------------------------------*/
 #speakers {
- background-color:white;
+ background-color:black;
   background-size: cover;
   position: relative;
   color: #fff;
@@ -1031,7 +1031,7 @@ border-radius: 50%;
 
 #speakers:before {
   content: "";
-  background:white;
+ 
   position: absolute;
   bottom: 0;
   top: 0;
