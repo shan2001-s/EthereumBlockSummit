@@ -989,7 +989,7 @@ color: #4724a8'
 .ShowIcon{
   color:white;
   background-color: #276cff;
-  cursor: pointer; position: absolute; margin-top: -200px; margin-left: 120px;
+  cursor: pointer; position: absolute; margin-top: -150px; margin-left: 100px;
   display: none;
   padding: 10px;
 border-radius: 50%;
@@ -1000,7 +1000,7 @@ border-radius: 50%;
 .ShowIcon{
   color:white;
   background-color: #276cff;
-  cursor: pointer; position: absolute; margin-top: -160px; margin-left: 100px;
+  cursor: pointer; position: absolute; margin-top: -150px; margin-left: 80px;
   display: none;
   padding: 10px;
 border-radius: 50%;
@@ -1919,4 +1919,9 @@ border-radius: 50%;
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+/* for get involved html */
+.textInvolved{
+color:  #66b2b2;
 }

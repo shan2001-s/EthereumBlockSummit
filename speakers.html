@@ -402,12 +402,12 @@ Cookies
   
   // Function to generate the HTML for each speaker
   function generateSpeakerHTML(speaker) {
-   var speakerHTML = `
+    var speakerHTML = `
    
    <div class="col-lg-2 col-5 ms-3" >
-              <div class="speakerh mt-5">
-                <div class="speaker" style="border-radius: 50%;" data-aos="fade-up" data-aos-delay="100">
-                  <div class="ShowLogo" >
+              <div class="speakerh mt-5 " >
+                <div class="speaker ms-4" style="border-radius: 50%; width:70%" data-aos="fade-up" data-aos-delay="100">
+                  <div class="ShowLogo " >
                    <img src="${speaker.imgSrc}"  alt="${speaker.name}" class="img-fluid">
                    
                   </div>
@@ -415,14 +415,14 @@ Cookies
                 
                  </div>
               </div>
-               <div class="ShowIcon" style=" ">
+               <div class="ShowIcon" style="">
                 <a href="${speaker.link}">
               ${speaker.Sociallogo}
             </a>
                 </div>
-              <div class="details" style="line-height: 1.2;  text-align: center; justify-content: center; justify-items: center;" >
-                <p style='text-size: 30px; '><a href="${speaker.link}">${speaker.name}</a></p>
-                <p style='color:black;'>${speaker.position}</p>
+              <div class="details" style="line-height: 1;  text-align: center; justify-content: center; justify-items: center;" >
+                <p style='text-size: 30px;'><a href="${speaker.link}">${speaker.name}</a></p>
+                <p style='color:#6610f2; margin-top: -20px'>${speaker.position}</p>
                 
               </div>
             </div>
