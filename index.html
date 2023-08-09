@@ -64,16 +64,14 @@
     <div id='headerItem' class="container-fluid container-xxl d-flex align-items-center" >
 
       <div id="logo" class="me-auto">
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
         <a href="index.html" class="scrollto"><img src="assets/img/newlogo4.png"  width="50%" alt="" title=""></a>
   
       </div>
 
       <div id="navbar"  class="navbar order-last order-lg-0" >
         <ul class=""  >
-          <li><a  style="font-family: 'Oswald', sans-serif" class="nav-link scrollto"  href="#schedule">AGENDA</a></li>
-          <!-- <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="#buy-tickets">TICKETS</a></li> -->
+
+        
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="speakers.html">SPEAKERS</a></li>
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="becomeSponsor.html">BECOME A SPONSOR</a></li>
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="becomeInvolver.html">GET INVOLVED</a></li> 
@@ -95,594 +93,75 @@
  
 
   <!-- ======= Hero Section ======= -->
-  <!-- Large Screen Section -->
-  <section  class="container d-flex align-items-center "  style=" height: 100lvh;   background-position: center; /* Center the image */
-  background-repeat: no-repeat;  /* Do not repeat the image */
-  background-size: cover;">
-  <div class="row mt-5 " style="display: flex; justify-content: center; align-items: center;">
 
-  
- 
-    <div class="col-lg-6 mt-5  align-items-center d-flex justify-content-center">
-      <div class="  align-items-center ">
-      
-        <div class=" container-fluid  align-items-center d-flex justify-content-end ">
-          <div class="col-7 align-items-end">
-            <div class="">
-              <h5 class="ms-5" style="color: #6610f2; margin-bottom: 0px;">EBS &nbsp; Nov 6-7-8 &nbsp; 2023 </h5>
-            <img class="ms-5" style=" width: 70%;" src="assets/img/EBSLogoB.png" >
-            <h5 class=" d-flex justify-content-center" style="color: #6610f2; margin-bottom: 0px;">Lisboa</h5>
-            </div>
-          </div>
-          <div class="col-5 align-items-end">
-            <div class="align-items-end">
-              <h4>. &nbsp; Workshops</h4>
-              <h4>. &nbsp; Technical Talks</h4>
-              <h4>. &nbsp; Good Vibg Only</h4>
-            </div>
-          </div>
-         </div>
-         
-         <div class=" mt-4  ms-5">
-          <style>
-            .btn {
-                background-color: #66b2b2;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                cursor: pointer;
-            }
-            .btn:hover {
-                background-color: white;
-            }
-        </style>
-        
-        <button class="btn btn-lg" href="speakers.html">Buy Ticket </button>
-        
-        </div>
-      
-      
-        
-      
-
-</div >
-  </div>
-  <div class="col-lg-6">
-    <img style="  width:100% ;
-
-object-fit: cover;" src="https://s11.gifyu.com/images/SWNJz.gif" alt="">
-  <h2 class="mt-2 d-flex justify-content-center" style="color: #4724a8;">BUILDING THE FUTURE BLOCK</h2>
-  <h3 class="d-flex justify-content-center" style="color: #4724a8;">REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT</h3>
-  </div>
-  </div>
-  
-<!-- 
-  The Old Version
-    <div class=" d-flex  justify-content-center " id="hero-text" >
-      <div class="hero-container mb-4 pb-0 p-5 text-center" style=" " >
-        <div style=" text-align: center; color: #6610f2;">
-          <h1 class="" style="font-family: 'Teko', sans-serif; font-size: 50px;color:#6610f2; " >BUILDING THE FUTURE BLOCK</h1>
-         <p class=" mt-1 pb-0  d-flex  justify-content-center " style=" font-size: 20px;"><span style="font-weight: 100;color: #8564e0; font-family: 'Agdasima', sans-serif;
-         font-family: 'Teko', sans-serif;font-size: 25px;color:#6610f2;"> REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT <br> 
-        
-        <div id="countdown" style="background-color: rgba(255, 255, 255, 0.182); ">
-          <div class="row w-auto">
-            <div id="days" class="col-3 countdown-number" ></div>
-            <div id="hours" class="col-3 countdown-number" ></div>
-            <div id="minutes" class="col-3 countdown-number" ></div>
-            <div id="seconds" class="col-3 countdown-number"></div>
-          </div>
-        </div>
-        
-        <style>
-         
-        </style>
-        
-        <script>
-          // Set the target date
-          const targetDate = new Date("November 6, 2023 00:00:00");
-        
-          function updateCountdown() {
-            // Get the current date and time
-            const now = new Date();
-        
-            // Calculate the time remaining
-            const timeDiff = targetDate - now;
-            if (timeDiff <= 0) {
-              // The event has already started
-              document.getElementById("countdown").style.display = "none";
-              return;
-            }
-        
-            // Calculate days, hours, minutes, and seconds
-            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
-        
-            // Update the countdown display
-            document.getElementById("days").innerHTML = '<span class="countdown-number">' + days + '</span><br> Day';
-            document.getElementById("hours").innerHTML = '<span class="countdown-number">' + hours + '</span><br> Hour';
-            document.getElementById("minutes").innerHTML = '<span class="countdown-number">' + minutes + '</span><br> Minute';
-            document.getElementById("seconds").innerHTML = '<span class="countdown-number">' + seconds + '</span><br> Second';
-        
-            // Schedule the next update after 1 second
-            setTimeout(updateCountdown, 1000);
-          }
-        
-          // Start the countdown
-          updateCountdown();
-        </script>
-        
-        
-         </span> 
-        
-          </p>
- 
-        
-        </div>
-        
-      </div>
-    </div> -->
-     </section>
-       <!-- Phone Screen Section -->
-       <!-- <section  class="container mt-5 d-md-none"  style="   background-position: center; /* Center the image */
-       background-repeat: no-repeat;  /* Do not repeat the image */
-       background-size: cover;">
-       <div class="row mt-5 " style="display: flex; align-items: center;">
-     
-         <div class="col-md-6 mt-5">
-           <div class=" align-items-center text-info" style="color: #6610f2;">
-           <div class="d-flex justify-content-center">
-             <img style="height: 150px;" src="assets/img/header.png" >
-           </div>
-           
-             <h1 class="mt-2 d-flex justify-content-center" style="color: #4724a8;">BUILDING THE FUTURE BLOCK</h1>
-             <h4 class="d-flex justify-content-center" style="color: #4724a8;">REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT</h4>
-            
-           
-     
-     </div >
-       </div>
-       <div class="col-md-6">
-         <img style="  width:100%;
-     height:50vh;
-     object-fit: cover;" src="https://s11.gifyu.com/images/SWNJz.gif" alt="">
-       </div>
-       </div>
-       
-    
-          </section> -->
-     
-     <!-- End Hero Section -->
 
   <main id="main">
+      <!-- ======= Hero Section ======= -->
+  <section id="hero"   style="   background-position: center; /* Center the image */
+  background-repeat: no-repeat;  /* Do not repeat the image */
+  background-size: cover; ">
+  <img style="  width:100%;
+  height:100vh;
+  object-fit: cover;" src="https://s11.gifyu.com/images/ScfG5.gif" alt="">
 
-    <!-- ======= About Section ======= -->
-    <!-- moving November 6-8th lisboa -->
-    <!-- <section id="about" style="background-color: black;" >
-      <div class="container" data-aos="fade-up">
-        <div class="text-container"  style="color: #8564e0;">
-          <span class="moving-text">NOVEMBER 6-8th<b>, </b> LISBOA</span>
-          <span class="moving-text" style="margin-left: 250px;"> NOVEMBER 6-8th<b>, </b> LISBOA </span>
-          <span class="moving-text" style="margin-left: 500px;"> NOVEMBER 6-8th<b>, </b> LISBOA </span>
-          <span class="moving-text" style="margin-left: 750px;"> NOVEMBER 6-8th<b>, </b> LISBOA </span>
-          <span class="moving-text" style="margin-left: 1000px;"> NOVEMBER 6-8th<b>, </b> LISBOA </span>
-          <span class="moving-text" style="margin-left: 1250px;"> NOVEMBER 6-8th<b>, </b> LISBOA </span>
-          <span class="moving-text" style="margin-left: 1500px;"> NOVEMBER 6-8th<b>, </b> LISBOA </span>
-          <span class="moving-text" style="margin-left: 1750px;"> NOVEMBER 6-8th<b>, </b> LISBOA </span>
-          <span class="moving-text" style="margin-left: 2000px;"> NOVEMBER 6-8th<b>, </b> LISBOA </span>
-        <p></p>
-      </div>
-      <style>
-           .text-container {
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
-            width: 100%;
-            font-family: 'Teko', sans-serif;
-            font-size: 18px;
-        }
+  
+  
+  </section><!-- End Hero Section -->
 
-        .moving-text {
-            position: absolute;
-            animation: moveRightToLeft 5s linear infinite;
-        }
 
-        @keyframes moveRightToLeft {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-      </style>
-      </div>
-    </section> -->
-    <!-- end Moving November 6-8th lisboa -->
 
-    <!-- <section id="about" style="background-color: whitesmoke;" >
-      <div class="container" data-aos="fade-up">
-       
-          <div class=" row" >
-           
-              <div class="col-md-6  text-lg-start text-center"  >
-               <h1 style="color: black;"> November 1 - 3</h1>
+
+
+    <!-- ======= Building The Future Block Section ======= -->
+    <section id="Main"  style="background-color: rgb(12, 12, 12)" class="" >
+      <div class="   d-flex align-items-center align-content-center" data-aos="fade-up" style="height: 100vh; padding: 15px;">
+        <!-- <div class="container-fluid d-flex align-items-center justify-content-center bg-info" data-aos="fade-up" style="height: 100vh;"></div> -->
+        <div class="row " style="width: 100%;" >
+          <div class="col-lg-4 d-flex align-items-center justify-content-center ">
+            <div class=" w-100">
+              <h2 class=" d-flex justify-content-center" style="font-family: 'Teko', sans-serif; font-size: 40px;color:#66b2b2; " >BUILDING THE FUTURE BLOCK</h2>
+            <h3 class="  d-flex justify-content-center text-center" style="font-family: 'Teko', sans-serif; font-size: 30px;color:#66b2b2; " >REDEFINING THE NEXT ERA OF ETHEREUM ADVANCEMENT</h3> <br><br>
+            <h4 class="  d-flex justify-content-center" style="font-family: 'Teko', sans-serif; font-size: 30px;color:#66b2b2; " >November 6-7-8 </h4> 
+            <h4 class="  d-flex justify-content-center" style="font-family: 'Teko', sans-serif; font-size: 30px;color:#66b2b2; " > LISBOA</h4> 
+            </div>
+          </div>
+          <div class="col-lg-8  ">
+          <div class="row align-items-center">
+            <div class="col-6  ">
+              <img src="assets/img/EBSLogoB.png" width="100%"/>
+            </div>
+            <div class="col-6 ps-4  d-flex justify-content-center">
+              <div>
+                <h2>. &nbsp; WORKSHOPS</h2>
+              <h2>. &nbsp; TECHNICAL TALKS</h2>
+              <h2>. &nbsp; GOOD VIBG ONLY</h2>
               </div>
-              <div class="col-md-6 text-lg-end text-center">
-               <h1 style="color: black;" id="countdown"></h1>
-              </div>
-             </div>
-
-           
+            </div>
+          </div>
+          </div>
+          <div class="w-100 d-flex justify-content-center mt-5">
+            <style>
+              .btnTicket {
+                  background-color: #66b2b2;
+                  color: white;
+                  border: none;
+                  padding: 10px 20px;
+                  cursor: pointer;
+              }
+              .btnTicket:hover {
+                  background-color: white;
+              }
+          </style>
+            <button type="button" class="btnTicket btn" style=" padding: 20px 50px 20px 50px; font-size: 20px;">Buy Ticket</button>
+          </div>
+        </div>
+        
+      </div>
 
     
-         
-       
-     
-      </div>
-    </section> -->
-    <!-- End About Section  -->
-
-    <!-- Vanue Section -->
-    <!-- <section  class=" pt-3" >
-
-      <div class="container ">
-       <div class="row d-flex align-items-center">
-        <div class='col-md-6 '  data-aos="fade-right">
-         
-          <div id="carouselExampleIndicators" style="height: 400px;" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators" id="carousel2" style=" border-radius: 10%;">
-              <button type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-            </div>
-            <div class="carousel-inner" style="border-radius: 20px;">
-                <div class="carousel-item active" data-bs-interval="1800">
-                <img src="assets/img/vanue/1.png"  class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="1800">
-                <img src="assets/img/vanue/2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="1800">
-                <img src="assets/img/vanue/3.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="1800">
-                <img src="assets/img/vanue/4.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="1800">
-                <img src="assets/img/vanue/5.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="1800">
-                <img src="assets/img/vanue/6.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="1800">
-                <img src="assets/img/vanue/7.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          
-          </div>
-         <div>
-          <p> </p><br>
-         
-         </div>
-       </div>
-        <div class='col-md-6  ' data-aos="fade-left">
-          
-          <div class="" style="height: auto;">
-            <div class="section-header">
-              <h2 style="color:  #8564e0;">Venue</h2>
-            </div>
-            <div class="d-flex justify-content-center" >
-              <h4 style="color:  #8564e0;">Pavilhão Carlos Lopes was built in 1921 for the International Exhibition of Rio de Janeiro, organized in 1922. Between 1929 and 1931 it was rebuilt on the slope of Parque Eduardo VII. In 1984, the pavilion was renamed again in honor of the Portuguese athlete Carlos Lopes, gold medal winner in the marathon in the Los Angeles Olympics of that year - Portugal's first-ever Olympic gold.</h4>
-            </div>
-  
-          </div>
-        </div>
-       
-          
-        </div>
-      </div>
-
-    </section> -->
-    <!-- end Vanue Section -->
-
-
-    <!-- ======= Schedule Section ======= -->
-    <section id="schedule"  class="section-with-bg" >
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2 class="text-black">Agenda</h2>
-          <p style="color: black;">Topics/Content: DAO growth, DataFi, Security & Compliance, LSDfi, Stablecoins, Intents, SSI, Account Abstraction, Cross-chain tech, Governance, RWA, Layer-2 scaling & ZK tech, Liquidity mining & staking, NFTs, erc-4337, Public Goods/ReFi, Prediction Models, Dev Tools, UI/UX, VC Track, Live Whale Tank Show and more soon! </p> 
-        </div>
-
-        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item">
-            <a class="nav-link active"  style="" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Day 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Day 3</a>
-          </li>
-        </ul>
-
-     
-        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- Schdule Day 1 -->
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-
-           <!-- <div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>09:30 AM</time></div>
-              <div class="col-md-10">
-                <h4>Registration</h4>
-                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Keynote <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-           </div> -->
-
-           <div style="text-align: center;">
-            <div><h2 style=" font-family: 'Teko', sans-serif; color: #4724a8;">Nov, 6-8th</h2></div>
-           
-           
-           </div>
-
-          </div>
-          <!-- End Schdule Day 1 -->
-
-          <!-- Schdule Day 2 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-
-            <!-- <div>
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>10:00 AM</time></div>
-                <div class="col-md-10">
-                  <div class="speaker">
-                    <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
-                  </div>
-                  <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                  <p>Facere provident incidunt quos voluptas.</p>
-                </div>
-              </div>
-  
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>11:00 AM</time></div>
-                <div class="col-md-10">
-                  <div class="speaker">
-                    <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
-                  </div>
-                  <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                  <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-                </div>
-              </div>
-  
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>12:00 AM</time></div>
-                <div class="col-md-10">
-                  <div class="speaker">
-                    <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
-                  </div>
-                  <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                  <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-                </div>
-              </div>
-  
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>02:00 PM</time></div>
-                <div class="col-md-10">
-                  <div class="speaker">
-                    <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
-                  </div>
-                  <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                  <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-                </div>
-              </div>
-  
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>03:00 PM</time></div>
-                <div class="col-md-10">
-                  <div class="speaker">
-                    <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
-                  </div>
-                  <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                  <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-                </div>
-              </div>
-  
-              <div class="row schedule-item">
-                <div class="col-md-2"><time>04:00 PM</time></div>
-                <div class="col-md-10">
-                  <div class="speaker">
-                    <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
-                  </div>
-                  <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                  <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-                </div>
-              </div>
-            </div> -->
-            <div style="text-align: center;">
-              <div><h2 style=" font-family: 'Teko', sans-serif;">Nov, 6-8th</h2></div>
-             
-             </div>
-          </div>
-          <!-- End Schdule Day 2 -->
-
-          <!-- Schdule Day 3 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-
-          <!-- <div>
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-          </div> -->
-
-          <div>
-            <div style="text-align: center;">
-              <div><h2 style=" font-family: 'Teko', sans-serif;">Nov, 6-8th</h2></div>
-             
-             </div>
-          </div>
-
-          </div>
-          <!-- End Schdule Day 2 -->
-
-        </div>
-
-      </div>
-
-    </section><!-- End Schedule Section -->
-
-    <!-- ======= Venue Section ======= -->
    
-    <!-- End Venue Section  -->
+    <!-- End Building The Future Block Section  -->
 
-    <section>
-
-    </section>
 
    
 

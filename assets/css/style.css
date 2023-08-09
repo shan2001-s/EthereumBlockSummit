@@ -1772,18 +1772,18 @@ border-radius: 50%;
 --------------------------------------------------------------*/
 #footer {
   background: whitesmoke;
-  padding: 0 0 25px 0;
+  padding: 0 0 0px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
   background:whitesmoke;
-  padding: 60px 0 30px 0;
+  padding: 30px 0 5px 0;
 }
 
 #footer .footer-top .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #footer .footer-top .footer-info h3 {
