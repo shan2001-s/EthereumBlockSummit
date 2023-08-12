@@ -144,6 +144,31 @@ h6 {
   background-color: #8564e0;;
 }
 
+/* Sections Header without under line
+--------------------------------*/
+.section-headerN {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-headerN h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-headerN p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -330,7 +355,7 @@ h6 {
   color:#754aec;
    font-family: 'Teko', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 17px;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
