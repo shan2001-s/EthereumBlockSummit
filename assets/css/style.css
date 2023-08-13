@@ -1946,7 +1946,28 @@ border-radius: 50%;
   color: #ddd;
 }
 
-/* for get involved html */
+/* for  become involved html */
 .textInvolved{
 color:  #66b2b2;
+}
+
+
+/*###################### Get Involved  html  ################################*/
+.btnTicket {
+  background-color: #66b2b2;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+   font-size: 18px;
+}
+
+.btnTicket:hover {
+  background-color: white;
+}
+.cardInvolved{
+  width: 20rem; background-color: #8564e0;
+  padding: 30px;
+  margin-top: 5px;
 }
