@@ -61,6 +61,22 @@
 </head>
 
 <body class='bg-black'>
+  <div id="loader" class="loadcenter"></div>
+  <script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                "#loader").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
+</script>
 
   <!-- ======= Header ======= -->
   <header id="header" style="position: fixed; top: 0; background-color: black; box-shadow: 10px 5px 10px #4724a8;"
