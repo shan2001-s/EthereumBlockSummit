@@ -66,8 +66,12 @@
     class="d-flex align-items-center">
     <div id='headerItem' class="container-fluid container-xxl d-flex align-items-center">
 
-      <div id="logo" class="me-auto">
+      <div id="logo" class="me-auto d-none d-lg-block">
         <a href="index.html" class="scrollto"><img src="assets/img/newlogo4.png" width="50%" alt="" title=""></a>
+
+      </div>
+      <div id="logo" class="me-auto d-lg-none">
+        <a href="index.html" class="scrollto"><img src="assets/img/newlogo4.png" width="100%" alt="" title=""></a>
 
       </div>
 
@@ -92,13 +96,13 @@
         </ul>
      
            
-        <i class="bi bi-list mobile-nav-toggle bg-dark "
+        <i class="bi bi-list mobile-nav-toggle  "
           style="color:#6610f2; margin-right: 60px; width: fit-content; margin-right: 20px;"></i>
          
       </div><!-- .navbar -->
 
-<div  class="d-lg-none" style="width:100%">
-        <a class="custom-link  ps-2 pe-2 ms-5   d-lg-none "  href="https://app.moongate.id/events/ebs" target="_blank"   style="color:rgb(45, 45, 45);  font-size: 15px; ">Get Tickets</a>
+<div  class="d-lg-none  d-flex justify-content-end me-3" style="width:40%">
+        <a class="custom-link     d-lg-none "  href="https://app.moongate.id/events/ebs" target="_blank"   style="color:rgb(45, 45, 45);  font-size: 15px; ">Get Tickets</a>
      
        </div>
 
@@ -113,7 +117,10 @@
   <main id="main">
     <!-- ======= Hero Section ======= -->
     <!-- ======= Hero Section ======= -->
-    <section id="hero" style=" height: 100vh;   background-position: center; /* Center the image */
+    <section id="hero" style="  position: sticky;
+    top: 0;
+    height: 100vh; 
+    overflow: auto;  background-position: center; /* Center the image */
   background-repeat: no-repeat;  /* Do not repeat the image */
   background-size: cover;">
 
@@ -186,7 +193,7 @@
         <!-- for non-lg screen -->
         <div class=" d-lg-none d-flex   justify-content-center " id="hero-text">
           <div class="hero-container  text-center  d-flex align-items-end">
-            <div class="text-white w-100  " style="position: absolute; top: 50px; left: 0;  ">
+            <div class="text-white w-100 " style="position: absolute; top: 50px; left: 0;  ">
               <p style="font-size: 20px;"></p>
                 <p class=" d-flex align-items-end    d-flex  justify-content-center " style=" font-size: 20px;
                 font-family: 'Teko', sans-serif;font-size: 17spx;color:#66b2b2; "> The Abel Pereira da Fonseca Venue
