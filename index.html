@@ -62,24 +62,6 @@
 </head>
 
 <body class='bg-black'>
-  <!-- <div id="loader" class="loadcenter"></div>
-  <script>
-    document.onreadystatechange = function () {
-      if (document.readyState !== "complete") {
-        document.querySelector(
-          "main").style.visibility = "hidden";
-        document.querySelector(
-          "#loader").style.visibility = "visible";
-      } else {
-        document.querySelector(
-          "#loader").style.display = "none";
-        document.querySelector(
-          "main").style.visibility = "visible";
-      }
-    };
-  </script> -->
-
-  <!-- ======= Header ======= -->
   <header id="header" style="position: fixed; top: 0; background-color: black; box-shadow: 10px 5px 10px #4724a8;"
     class="d-flex align-items-center">
     <div id='headerItem' class="container-fluid container-xxl d-flex align-items-center">
@@ -108,11 +90,17 @@
                 style=" font-size: 20px;"></i></a>
           </li>
         </ul>
+     
+           
         <i class="bi bi-list mobile-nav-toggle bg-dark "
-          style="color:#6610f2; margin-right: 60px; width: fit-content;"></i>
+          style="color:#6610f2; margin-right: 60px; width: fit-content; margin-right: 20px;"></i>
+         
       </div><!-- .navbar -->
 
-
+<div  class="d-lg-none" style="width:100%">
+        <a class="custom-link  ps-2 pe-2 ms-5   d-lg-none "  href="https://app.moongate.id/events/ebs" target="_blank"   style="color:rgb(45, 45, 45);  font-size: 15px; ">Get Tickets</a>
+     
+       </div>
 
     </div>
   </header><!-- End Header -->
@@ -128,6 +116,10 @@
     <section id="hero" style="   background-position: center; /* Center the image */
   background-repeat: no-repeat;  /* Do not repeat the image */
   background-size: cover;">
+
+  <!-- for lg screen -->
+
+<!-- for lg screen -->
 <div class="d-none d-lg-block" style="z-index: auto;">
   <div style=" position: absolute; height:100vh;
   display: flex; align-items: center;
@@ -137,8 +129,8 @@
   padding: 10px; font-size: 30px;">
    <div>
     The Abel Pereira da Fonseca Venue <br>
-   Lisbon, November 6-8th, 2023 <br> <br> <br>
-Join us for the first Ethereum Block Summit <br> 
+   Lisbon, November 6-8th, 2023 <br> <br>
+  Join us for the first Ethereum Block Summit <br> 
 
 <div class="d-flex justify-content-center align-items-center mt-2">
   <a class="custom-link scrollto ps-4 pe-4"  href="https://app.moongate.id/events/ebs" target="_blank" style="color: black; font-size: 20px;">Get Tickets</a>
@@ -168,7 +160,8 @@ Join us for the first Ethereum Block Summit <br>
 
 
       <div class="row">
-        <div class=" d-flex  justify-content-center " id="hero-text">
+        <!-- for lg screen -->
+        <div class=" d-none d-lg-block d-flex  justify-content-center " id="hero-text">
           <div class="hero-container mb-4 pb-0 p-5 text-center">
             <div style=" text-align: center; color: white; margin-left: 40px;">
              
@@ -182,6 +175,37 @@ Join us for the first Ethereum Block Summit <br>
 
 
                 </span>
+
+              </p>
+
+
+            </div>
+
+          </div>
+        </div>
+        <!-- for non-lg screen -->
+        <div class=" d-lg-none d-flex  justify-content-center " id="hero-text">
+          <div class="hero-container  text-center  d-flex align-items-end">
+            <div class="text-white w-100  " style="position: absolute; top: 50px; left: 0;  ">
+              <p style="font-size: 20px;"></p>
+                <p class=" d-flex align-items-end    d-flex  justify-content-center " style=" font-size: 20px;
+                font-family: 'Teko', sans-serif;font-size: 17spx;color:#66b2b2; "> The Abel Pereira da Fonseca Venue
+                Lisbon, November 6-8th, 2023 <br>Join us for the first Ethereum Block Summit
+            </div> 
+            <div class=" " style=" text-align: center; color: white; margin-bottom: -10px;" >
+             
+              <h5 class=" text-center  " style="font-family: 'Teko', sans-serif; font-size: 30px;color:#66b2b2;  margin-bottom: -5px;  ">BUILDING THE FUTURE
+                BLOCKS</h5>
+
+            <div>
+              <p class=" d-flex align-items-end    d-flex  justify-content-center " style=" font-size: 20px;
+                font-family: 'Teko', sans-serif;font-size: 20px;color:#66b2b2; "> REDEFINING THE NEXT ERA OF
+                         ETHEREUM ADVANCEMENT 
+            </div>
+
+
+
+              
 
               </p>
 
