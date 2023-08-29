@@ -15,12 +15,22 @@
   color: #2f3138;
   font-family: 'Teko', sans-serif;
 } */
+main{
+  overflow: hidden;
+}
+
+head{
+  overflow-x: hidden;
+}
 
 body {
   
   background: black;
   color: #2f3138;
   font-family: 'Teko', sans-serif;
+  overflow-x: hidden;
+}
+footer{
   overflow-x: hidden;
 }
 
