@@ -81,7 +81,7 @@
   </style>
 
   <!-- ======= Header ======= -->
-  <header id="header" style="position: fixed; top: 0; background-color: black; box-shadow: 10px 5px 10px#fdc345  ;"
+  <header id="header" style="position: fixed; top: 0; background-color: black;box-shadow: 10px 5px 10px #212529;"
     class="d-flex align-items-center">
     <div id='headerItem' class="container-fluid container-xxl d-flex align-items-center">
 
@@ -92,14 +92,12 @@
 
       <div id="navbar" class="navbar order-last order-lg-0">
         <ul class="">
-
+          <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="index.html">HOME</a></li>
+          <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="speakers.html">SPEAKERS</a></li>
           <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="Agenda.html">AGENDA</a></li>
          
-          <li><a style="font-family: 'Oswald', sans-serif" class="nav-link scrollto" href="GetInvolved.html">GET
-              INVOLVED</a></li>
-              <div class="ms-4">
-                <a class="custom-link scrollto ps-4 pe-4" href="https://app.moongate.id/events/ebs" target="_blank" style="color: black; font-size: 20px;">Get Tickets</a>
-              </div> 
+   
+            
           <li class=" d-flex" id="twitter_head">
             <a href="https://twitter.com/TheBlockLisboa" target="_blank" id="NavTwitter" class="nav-link scrollto"><i
                 class="bi bi-twitter" style=" font-size: 20px;"></i></a>
@@ -137,11 +135,9 @@
               <div class="col-md-12" style="text-align: left; z-index: auto; ">
                 <div class="details-aboutUs" style="text-align: left; ">
                   <p style="font-size: 25px; color: #eda406 ">
-                    Sponsorship Information <br> <br>
-                    Please fill out this form to learn more about sponsorship opportunities for this year's Ethereum
-                    Block Summit.
-                    <br>
-                    Ethereum Block Summit will take place on November 6-10th in Lisbon.
+                    
+                    If you're interested in being a sponsor, kindly complete the form, and one of our team will reach out to you with further details. Thank you!
+                    
                   </p>
 
                 </div>
@@ -164,15 +160,17 @@
                   </div>
 
                   <div class="mb-3 col-md-6">
-                    <label for="name" class="form-label" style="color: #eda406">What is your Budget?</label>
-                    <select class="form-select" name="f_budget" aria-label="Default select example">
+                    <label for="name" class="form-label" style="color: #eda406">What is your Budget? (Between 1K and 8K)</label>
+                    <!-- <select class="form-select" name="f_budget" aria-label="Default select example">
 
                       <option value="1K" selected>1K</option>
                       <option value="5K">5K </option>
                       <option value="10K-15K">10K - 15K </option>
                       <option value="15K-20K">15K - 20K </option>
                       <option value="20K - 25K">20K - 25K </option>
-                    </select>
+                    </select> -->
+                    <input type="text"name="f_budget" class="form-control" id="exampleInputPassword1" required>
+                
                   </div>
                   <div class="mb-3 col-md-6">
                     <label for="name" class="form-label" style="color: #eda406">Website</label>
